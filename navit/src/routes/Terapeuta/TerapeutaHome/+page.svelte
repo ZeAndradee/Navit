@@ -1,14 +1,20 @@
 <script>
+    import EstatisticasDiarias from "$lib/EstatisticasDiarias/EstatisticasDiarias.svelte";
+    import SearchCase from "$lib/SearchCase/SearchCase.svelte";
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenuInicio.svelte";
 </script>
 
-<div class="flex flex-row"  >
+<div class="flex flex-row h-screen bg-background"  >
     <div>
         <SideBarMenuInicio />
     </div>
-    <div class="z-10">01</div>
-    <div>02</div>
-    <div>03</div>
+    <div> 
+        <EstatisticasDiarias />
+    </div>
+
+    <div> 
+        <SearchCase />
+    </div>
 
 </div>
 

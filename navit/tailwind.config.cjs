@@ -8,8 +8,14 @@ const config = {
 
   theme: {
     extend: {
+      spacing: {
+        sidebar: '240px',
+        estatisticaDiariaa: '288px',
+      },
       colors:{
-        'blue-youme': '#006AFF', 
+        'blue-youme': '#006AFF',
+        'estatisca-diaria': '#F8F7F1',
+        'background': '#F9F9F9', 
       }
     },
   },
