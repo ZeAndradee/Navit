@@ -8,10 +8,7 @@
     <div>
         <SideBarMenuInicio />
     </div>
-    <div> 
-        <EstatisticasDiarias />
-    </div>
-
+    
     <div> 
         <SearchCase />
     </div>
