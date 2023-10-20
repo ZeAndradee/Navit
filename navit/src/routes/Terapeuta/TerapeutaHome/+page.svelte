@@ -8,7 +8,7 @@
     <div>
         <SideBarMenuInicio />
     </div>
-
+    
     <div> 
         <SearchCase />
     </div>
