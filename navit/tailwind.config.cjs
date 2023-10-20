@@ -14,7 +14,7 @@ const config = {
       },
       colors:{
         'blue-youme': '#006AFF',
-        'estatisca-diaria': '#F8F7F1',
+        
         'background': '#F9F9F9', 
       }
     },
