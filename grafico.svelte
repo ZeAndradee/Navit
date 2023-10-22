@@ -15,14 +15,14 @@
                 datasets: [
                     {
                         label: "Registro de Cliques - 2023",
-                        data: [5, 10, 5, 14, 20, 15, 6, 14, 8, 12, 15, 5, 10],
+                        data: [1234, 2456, 8943, 100, 3113, 1500, 6050, 2000, 8050, 2558, 150, 2798, 1390],
                         borderWidth: 6,
                         borderColor: 'rgba(77, 166, 567, 3.54)',
                         backgroundColor: 'transparent'
                     },
                     {
                         label: "Registro de Cliques - 2022",
-                        data: [9, 14, 11, 6, 5, 4, 3, 8, 11, 10, 13, 18, 6],
+                        data: [4000, 1450, 5550, 2430, 7000, 4458, 8430, 5678, 90, 6559, 2960, 1865, 2399],
                         borderWidth: 6,
                         borderColor: 'rgba(6, 204, 6, 0.85)',
                         backgroundColor: 'transparent'
@@ -53,9 +53,10 @@
 </grafico>
 <style>
     .chart-container {
-        width: 80%; 
-        max-width: 600px; 
+        width: 550px;
         height: 400px; 
-        margin: 0 auto; 
+        position: fixed;
+        right: 0px; 
+        bottom: 200px;
     }
 </style>
