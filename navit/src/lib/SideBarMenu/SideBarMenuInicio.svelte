@@ -135,7 +135,7 @@
                            </svg>
                      </div>  
                      <div class="txt-Sair" style="font-size:18px; font-weight: 600;">
-                        <span class="txtclicado">Sair</span>
+                        <span class="txtclicado" style="color: black;">Sair</span>
                      </div> 
                   </div>
                </div>

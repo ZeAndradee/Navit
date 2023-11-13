@@ -3,15 +3,13 @@
     <div class="div-txt">
       <span class="txt">Estatísticas Diárias</span>
       <span class="txt" style="font-size: 15px; color: #A3A3A3; font-weight: 400">{dataFormatada}</span>    </div>
-  </div>
-  <div class="card1">
-    <div class="txt-header-card"> 
-      <span style="font-size: 18px; font-weight:500; color: #656575">Tempo Total Sessão</span>
-      <div class="box-hoje">
-        <span style="font-size: 14px; font-weight: 400; color: #656575">Hoje</span>
+      <div class="cards">
+        <Card1 />
+        <Card2 />
       </div>
-    </div>
+      
   </div>
+  
 </div>
 
 <style>
@@ -40,44 +38,18 @@
     
   }
 
-  .card1{
-    display: flex;
-    width: 288px;
-    height: 190px;
-    margin-left: 8%;
-    padding: 24px 24px 20px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    border-radius: 10px;
-    background: #FDFDFD;
-
-  }
-
-  .txt-header-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  }
-
-  .box-hoje{
-    width: 52px;
-    height: 24px;
-    border-radius: 2px;
-    padding: 4px 8px;
-    background: #F4F5F7;
+  .cards{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 16px;
   }
   
 </style>
 
 <script>
   // @ts-nocheck
+  import Card1 from "./Card1.svelte";
+  import Card2 from "./Card2.svelte";
   // Data e hora estatisticas diarias
   let dataAtual = new Date();
   let opcoesData = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };

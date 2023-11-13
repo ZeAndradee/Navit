@@ -12,11 +12,12 @@
         display: flex;
         width: 585px;
         height: 48px;
-        margin-top: 28px;
         padding: 10px 24px 12px 32px;
         background: white;
         border-radius: 10px;
         outline: none;
+        margin-left: 600px;
+        
     }
 
     .search-bar input{

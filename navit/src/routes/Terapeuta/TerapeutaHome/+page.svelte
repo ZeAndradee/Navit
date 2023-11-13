@@ -5,33 +5,32 @@
     import EstatisticasDiarias from "$lib/EstatisticasDiarias/EstatisticasDiarias.svelte";
 </script>
 
-    <div>
-        <SideBarMenuInicio />
-    </div>
+<div>
+    <SideBarMenuInicio />
+</div>
 
-    <div>
-        <EstatisticasDiarias />
-    </div>
+<div> 
+    <SearchCase />
+</div>
+
+<div>
+    <EstatisticasDiarias />
+</div>
+
+<div class="div">
     
-    <div class="search-Box"> 
-        <SearchCase />
-    </div>
+</div>
 
-    <div>
-        <GraficoRadar/>
-    </div>
+
+
+
 
 <style>
-   .search-Box{
-            position: fixed;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            
-        }
+   .div{
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        margin-left: 500px;
+   }
             
 </style>
