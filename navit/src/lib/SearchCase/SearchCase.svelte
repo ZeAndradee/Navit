@@ -16,7 +16,8 @@
         background: white;
         border-radius: 10px;
         outline: none;
-        margin-left: 600px;
+        justify-content: center;
+        align-items: center;
         
     }
 
