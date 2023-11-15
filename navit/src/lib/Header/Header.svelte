@@ -9,11 +9,13 @@
         display: flex;
         flex-direction: row;
         width: 100%;
+        
     }
+
     .pfp{
-        position: relative;
         margin-left: auto;
     }
+    
 </style>
 
 <script>

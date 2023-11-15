@@ -1,10 +1,10 @@
 <script>
-    import SearchCase from "$lib/SearchCase/SearchCase.svelte";
+    import Header from "$lib/Header/Header.svelte";
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenuInicio.svelte";
     import GraficoRadar from "$lib/GraficoRadar/PosicionarGrafico.svelte"
     import EstatisticasDiarias from "$lib/EstatisticasDiarias/EstatisticasDiarias.svelte";
 </script>
-<div class="container">
+<div class="caixa">
     <div>
         <div class="sidebar">
             <SideBarMenuInicio />
@@ -16,17 +16,18 @@
     
     <div class="header">
         <div class="search-case"> 
-            <SearchCase />
+            <Header />
         </div>
     </div>
 </div>
 
 <style>
-    .container{
+    .caixa{
         display: flex;
         flex-direction: row;
+        
         width: 100%;
-        height: 100%;
+        
     }
     .header{
         position: relative;
@@ -39,6 +40,7 @@
     }
     .search-case{
         position: relative;
+        width: 100%;
     }
     
 </style>
