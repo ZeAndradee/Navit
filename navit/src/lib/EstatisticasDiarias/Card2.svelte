@@ -1,6 +1,6 @@
 <div class="card1">
     <div class="txt-header-card"> 
-      <span style="font-size: 18px; font-weight:500; color: #656575">Progresso Pacientes</span>
+      <span style="font-size: 18px; font-weight:500;">Progresso Pacientes</span>
       <div class="box-hoje">
         <span style="font-size: 14px; font-weight: 400; color: #656575">Hoje</span>
       </div>

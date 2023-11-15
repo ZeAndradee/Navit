@@ -6,6 +6,7 @@
       <div class="cards">
         <Card1 />
         <Card2 />
+        <Card3 />
       </div>
       
   </div>
@@ -50,6 +51,8 @@
   // @ts-nocheck
   import Card1 from "./Card1.svelte";
   import Card2 from "./Card2.svelte";
+  import Card3 from "./Card3.svelte";
+
   // Data e hora estatisticas diarias
   let dataAtual = new Date();
   let opcoesData = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
