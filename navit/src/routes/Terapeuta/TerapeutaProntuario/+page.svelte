@@ -1,24 +1,14 @@
 <script>
-    import SideBarMenuProntuario from "$lib/SideBarMenu/SideBarMenuProntuario.svelte";
-    import SearchCase from "$lib/SearchCase/SearchCase.svelte";
+    import Header from "../../../lib/header/header.svelte";
+    import Headerpaciente from "../../../lib/headerPaciente/headerpaciente.svelte";
+    import InfoPaciente from "../../../lib/infoPaciente/infoPaciente.svelte";
+    import Cardtemptela from "../../../lib/cardtempotela/cardtemptela.svelte";
+    import Cardbotaoutilizado from "../../../lib/cardbotaoutilizado/cardbotaoutilizado.svelte";
 </script>
 
-<header>
-    <SearchCase/>
-</header>
-
-<div class="sidebar">
-    <SideBarMenuProntuario />
-</div>
 
 <slot>
-<div class="container">
 
-</div>
+
 </slot>
-<style>
-.container{
-    background-color: aqua;
-}
-</style>
     

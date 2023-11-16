@@ -21,7 +21,6 @@
 
 </body>
 
-</html>
 
 <style>
   .caixa-paciente {
