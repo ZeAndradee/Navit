@@ -144,7 +144,7 @@
   }
   .container_a , .container_b , .container_c, .container_d , .container_e, .container_f, .container_g, .container_h, .container_i, .container_j{
     align-items: center;
-    background-color#FFFFFF;
+    background-color:#FFFFFF;
     display: flex;
     padding: 12px 0px;
     align-items: center;
