@@ -144,11 +144,9 @@
 
 
 <style>
-.aside{
-         height: 100%;
-      }
+
 .sidebar{
-         position: fixed;
+         position: relative;
          background-color: white;
          width: 240px;
          height: 100%;

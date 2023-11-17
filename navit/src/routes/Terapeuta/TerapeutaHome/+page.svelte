@@ -4,16 +4,14 @@
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
 </script>
 <div class="caixa">
-    <div>
-        <div class="sidebar">
-            <SideBarMenuInicio />
-        </div>
-        <div class="estatisticas">
-            <EstatisticasDiarias />
-        </div>
-        
-    </div>
     
+    <div class="sidebar">
+        <SideBarMenuInicio />
+    </div>
+    <div class="estatisticas">
+        <EstatisticasDiarias />
+    </div>
+       
     <div class="header">
         <div class="search-case">
             <Header />
@@ -28,6 +26,16 @@
         width: 100%;
         
     }
+
+    .sidebar{
+        position: relative;
+        display: flex;
+    }
+    .estatisticas{
+        position: relative;
+        display: flex;
+    }
+
     .header{
         position: relative;
         display: flex;
