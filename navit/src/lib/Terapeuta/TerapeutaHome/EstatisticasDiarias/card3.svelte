@@ -1,6 +1,6 @@
 <script>
     
-import { Chart } from 'chart.js';
+import Chart from 'chart.js/auto';
 import { onMount } from 'svelte';
   // Obter uma referência ao elemento canvas
   // @ts-ignore
