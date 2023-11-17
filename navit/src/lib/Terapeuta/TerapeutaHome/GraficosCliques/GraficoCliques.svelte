@@ -23,24 +23,28 @@
                 type: 'line',
                 data: {
                     labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'],
-                    datasets: [{
-                        fill: true,
-                        backgroundColor: gradient, // Use o gradiente aqui
-                        borderColor: 'rgba(0, 106, 255, 0.8)',
-                        //Linha 1
-                        data: [5000, 2000, 5000, 2000,1800,4000,3800,5000,3000,4900,4500,3500,5000],
-                        tension: 0.4,
-                        pointRadius: 0,
-                    },
-                    {
-                    fill: true,
-                    backgroundColor: 'rgba(255, 0, 0, 0.2)',
-                    borderColor: 'rgba(255, 0, 0, 0.8)',
-                    //Linha 2
-                    data: [5, 15, 10, 3, 25, 35, 50],
-                    tension: 0.0,
-                    pointRadius: 0,
-                    }]
+                    datasets: [
+                        {
+                            fill: false,
+                            
+                            borderColor: 'rgba(101, 101, 117, 0.5)',
+                            //Linha 2
+                            data: [1000, 3000, 4000, 2500, 3500, 2000, 4500, 1500, 5000, 3500, 4000, 2000, 4500],
+                            borderDash: [9, 8],
+                            borderCapStyle: 'round',
+                            tension: 0.4,
+                            pointRadius: 0,
+                        },
+                        {
+                            fill: true,
+                            backgroundColor: gradient, // Use o gradiente aqui
+                            borderColor: 'rgba(0, 106, 255, 0.8)',
+                            //Linha 1
+                            data: [5000, 2000, 5000, 2000,1800,4000,3800,5000,3000,4900,4500,3500,5000],
+                            tension: 0.4,
+                            pointRadius: 0,
+                        }
+                    ]
                 },
                 options: {
                     
@@ -102,7 +106,6 @@
     .valores-grafico{
         display: flex; 
         flex-direction:row;
-        border: red solid 1px;
         align-items: center;
     }
 
