@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=inter">
+
 
 <body>
   <div class="container">
@@ -19,6 +19,7 @@
 
 
 <style>
+  @import url('https://rsms.me/inter/inter.css');
   .container {
     position: flex;
     width: 618px;
@@ -26,6 +27,8 @@
     flex-shrink: 0;
     background-color: #FFFFFF;
     border-radius: 10px;
+    align-items: center;
+    padding: 20px;
   }
 
   .id {

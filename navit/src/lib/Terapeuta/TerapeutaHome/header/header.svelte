@@ -19,6 +19,6 @@
 </style>
 
 <script>
-    import SearchCase from "./SearchCase.svelte";
+    import SearchCase from "../SearchCase/SearchCase.svelte";
     import PFP from "./PFP.svelte";
 </script>
