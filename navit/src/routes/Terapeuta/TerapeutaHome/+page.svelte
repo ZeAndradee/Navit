@@ -11,10 +11,11 @@
         <div class="estatisticas">
             <EstatisticasDiarias />
         </div>
+        
     </div>
     
     <div class="header">
-        <div class="search-case"> 
+        <div class="search-case">
             <Header />
         </div>
     </div>
@@ -24,7 +25,6 @@
     .caixa{
         display: flex;
         flex-direction: row;
-        
         width: 100%;
         
     }
