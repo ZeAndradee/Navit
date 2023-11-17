@@ -1,5 +1,6 @@
 <div class="header">
     <SearchCase />
+    
     <div class="pfp"><PFP /></div>
     
 </div>

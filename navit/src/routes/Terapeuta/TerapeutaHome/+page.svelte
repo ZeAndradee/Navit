@@ -1,10 +1,11 @@
 <script>
-    import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
-    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte";
+    import Header from "$lib/Terapeuta/TerapeutaHome/Header/Header.svelte"
+    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
     import GraficoCliques from "$lib/Terapeuta/TerapeutaHome/GraficosCliques/GraficoCliques.svelte"
+    import ListaPacientes from "$lib/Terapeuta/TerapeutaHome/ListaPacientes/ListaPaciente.svelte"
 </script>
-<div class="caixa">
+
     <div class="row">
         <div class="sidebar">
             <SideBarMenuInicio />
@@ -14,30 +15,29 @@
             <EstatisticasDiarias />
         </div>
         
-    </div>
-    
-    <div class="column">
-        <div class="header">
-            <div class="search-case">
-                <Header />
+        <div class="column">
+            <div class="header">
+                <div class="search-case">
+                    <Header />
+                </div>
+            </div>
+            <div class="grafico-cliques">
+                <GraficoCliques />
+            </div>
+            <div class="lista-pacientes">
+                <ListaPacientes />
             </div>
         </div>
-        <div class="grafico-cliques">
-            <GraficoCliques />
-        </div>
     </div>
-</div>
+    
+
 
 <style>
-    .caixa{
-        display: flex;
-        width: 100%;
-        
-    }
+    
     .row{
         display: flex;
         flex-direction: row;
-        
+        height: 100%;
         }
 
     .column{
@@ -50,8 +50,10 @@
     .sidebar{
         position: relative;
         display: flex;
+        height: 100vh;
     }
     .estatisticas{
+        height: 100vh;
         position: relative;
         display: flex;
     }

@@ -10,17 +10,18 @@
 <style>
     .search-bar{
         display: flex;
-        width: 585px;
+        width: 100%;
+        min-width: 319px;
+        max-width: 585px;
         height: 48px;
         padding: 10px 24px 12px 32px;
         background: white;
         border-radius: 10px;
         outline: none;
-        justify-content: center;
-        align-items: center;
         
     }
 
+    
     .search-bar input{
         background: transparent;
         flex: 1;
@@ -29,5 +30,11 @@
     }
     
     .search-bar input:focus { outline: none; }
+    
+    @media(max-width: 1162px){
+        .search-bar{
+            margin-right: 50px;
+        }
+    }
 
 </style>
