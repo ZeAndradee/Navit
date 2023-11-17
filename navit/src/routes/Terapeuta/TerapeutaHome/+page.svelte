@@ -3,7 +3,7 @@
     import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
     import GraficoCliques from "$lib/Terapeuta/TerapeutaHome/GraficosCliques/GraficoCliques.svelte"
-    import ListaPacientes from "$lib/Terapeuta/TerapeutaHome/ListaPacientes/ListaPaciente.svelte"
+    import ListaPacientes from "$lib/Terapeuta/TerapeutaHome/ListaPacientess/ListaPacientes.svelte"
 </script>
 
     <div class="row">
@@ -25,7 +25,7 @@
                 <GraficoCliques />
             </div>
             <div class="lista-pacientes">
-                <ListaPacientes />
+                <ListaPacientes/>
             </div>
         </div>
     </div>

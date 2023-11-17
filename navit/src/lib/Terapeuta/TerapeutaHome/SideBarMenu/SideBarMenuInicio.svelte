@@ -41,7 +41,7 @@
 
             <!--Opção 2 Sidebar-->
             <li>
-               <a href="/Terapeuta/TerapeutaProntuarioPaciente">
+               <a href="/Terapeuta/TerapeutaProntuarioPaciente1">
                   <div class="btn-NClicado">
                      <div class="txticon">
                         <div class="icon">
