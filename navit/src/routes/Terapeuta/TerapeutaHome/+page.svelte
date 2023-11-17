@@ -68,5 +68,11 @@
         position: relative;
         width: 100%;
     }
+
+    .grafico-cliques{
+        position: relative;
+        display: flex;
+        
+    }
     
 </style>
