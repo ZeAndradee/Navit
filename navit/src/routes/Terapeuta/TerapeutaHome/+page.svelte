@@ -2,19 +2,28 @@
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
     import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte";
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
+    import GraficoCliques from "$lib/Terapeuta/TerapeutaHome/GraficosCliques/GraficoCliques.svelte"
 </script>
 <div class="caixa">
+    <div class="row">
+        <div class="sidebar">
+            <SideBarMenuInicio />
+        </div>
+
+        <div class="estatisticas">
+            <EstatisticasDiarias />
+        </div>
+        
+    </div>
     
-    <div class="sidebar">
-        <SideBarMenuInicio />
-    </div>
-    <div class="estatisticas">
-        <EstatisticasDiarias />
-    </div>
-       
-    <div class="header">
-        <div class="search-case">
-            <Header />
+    <div class="column">
+        <div class="header">
+            <div class="search-case">
+                <Header />
+            </div>
+        </div>
+        <div class="grafico-cliques">
+            <GraficoCliques />
         </div>
     </div>
 </div>
@@ -22,10 +31,21 @@
 <style>
     .caixa{
         display: flex;
-        flex-direction: row;
         width: 100%;
         
     }
+    .row{
+        display: flex;
+        flex-direction: row;
+        
+        }
+
+    .column{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }    
 
     .sidebar{
         position: relative;
@@ -42,7 +62,6 @@
         margin-left: 28px;
         margin-top: 28px;
         flex-direction: row;
-        width: 100%;
         margin-top: 28px;
     }
     .search-case{
