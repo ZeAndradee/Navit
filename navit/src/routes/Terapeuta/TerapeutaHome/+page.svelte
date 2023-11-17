@@ -1,24 +1,45 @@
 <script>
-    // @ts-ignore
-    import EstatisticasDiarias from "$lib/EstatisticasDiarias/EstatisticasDiarias.svelte";
-    // @ts-ignore
-    import SearchCase from "$lib/SearchCase/SearchCase.svelte";
-    // @ts-ignore
-    import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenuInicio.svelte";
-    // @ts-ignore
-    import ListaPacientes from "$lib/ListaPacientes/ListaPacientes.svelte";
+    import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
+    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte";
+    import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
 </script>
-
-<div class="flex flex-row h-screen bg-background"  >
+<div class="caixa">
     <div>
-        <SideBarMenuInicio />
+        <div class="sidebar">
+            <SideBarMenuInicio />
+        </div>
+        <div class="estatisticas">
+            <EstatisticasDiarias />
+        </div>
     </div>
     
-    <div> 
-        <SearchCase />
+    <div class="header">
+        <div class="search-case"> 
+            <Header />
+        </div>
     </div>
 </div>
-    <div class="mb-1200">
-        <ListaPacientes />
-    </div> 
 
+<style>
+    .caixa{
+        display: flex;
+        flex-direction: row;
+        
+        width: 100%;
+        
+    }
+    .header{
+        position: relative;
+        display: flex;
+        margin-left: 28px;
+        margin-top: 28px;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 28px;
+    }
+    .search-case{
+        position: relative;
+        width: 100%;
+    }
+    
+</style>
