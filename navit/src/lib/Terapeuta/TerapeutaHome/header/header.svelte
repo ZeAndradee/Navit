@@ -20,6 +20,6 @@
 </style>
 
 <script>
-    import SearchCase from "./SearchCase.svelte";
+    import SearchCase from "./searchCase.svelte";
     import PFP from "./PFP.svelte";
 </script>

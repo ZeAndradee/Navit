@@ -1,16 +1,24 @@
 <script>
-    import Headerpaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/HeaderPaciente/HeaderPaciente.svelte";
-    import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaciente/infoPaciente.svelte";
-    import Cardtemptela from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardtempotela/cardtemptela.svelte";
-    import Cardbotaoutilizado from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardbotaoutilizado/cardbotaoutilizado.svelte";
-    import Header from "$lib/Terapeuta/TerapeutaHome/Header/Header.svelte";
+    // import headerPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/headerPaciente/headerpaciente.svelte";
+    // import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaciente/infoPaciente.svelte";
+    // import Cardtemptela from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardtempotela/cardtemptela.svelte";
+    // import Cardbotaoutilizado from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardbotaoutilizado/cardbotaoutilizado.svelte";
+    import SideBarMenuProntuario from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuProntuario.svelte";
+    import Header from "$lib/Terapeuta/TerapeutaHome/header/header.svelte";
 </script>
 
 
-<Header/>
-<Headerpaciente/>
-<InfoPaciente/>
-<Cardtemptela/>
-<Cardbotaoutilizado/>
+<div class="header_pesquisa">
+    <Header></Header>
+</div>
 
+<div class="sidebar">
+    <SideBarMenuProntuario></SideBarMenuProntuario>
+</div>
+
+
+<style>
+.header_pesquisa{
     
+}
+</style>
