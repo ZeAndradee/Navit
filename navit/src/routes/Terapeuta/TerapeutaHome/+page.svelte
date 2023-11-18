@@ -4,6 +4,7 @@
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
     import GraficoCliques from "$lib/Terapeuta/TerapeutaHome/GraficosCliques/GraficoCliques.svelte"
     import ListaPacientes from "$lib/Terapeuta/TerapeutaHome/ListaPacientess/ListaPacientes.svelte"
+    import GraficoComportamento from "$lib/Terapeuta/TerapeutaHome/GraficoComportamento/GraficoComportamento.svelte"
 </script>
 
     <div class="row">
@@ -24,9 +25,14 @@
             <div class="grafico-cliques">
                 <GraficoCliques />
             </div>
-            <div class="lista-pacientes">
-                <ListaPacientes/>
-            </div>
+            <div class="row-inferior"></div>
+                <div class="lista-pacientes">
+                    <ListaPacientes/>
+                </div>
+                
+                <div class="grafico-humor">
+                    <GraficoComportamento />
+                </div>
         </div>
     </div>
     
@@ -56,6 +62,13 @@
         height: 100vh;
         position: relative;
         display: flex;
+    }
+
+    .lista-pacientes{
+        position: relative;
+        display: flex;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     .header{
