@@ -25,15 +25,16 @@
             <div class="grafico-cliques">
                 <GraficoCliques />
             </div>
-            <div class="row-inferior"></div>
+            <div class="row-inferior">
                 <div class="lista-pacientes">
                     <ListaPacientes/>
                 </div>
-                
-                <div class="grafico-humor">
+                <div class="grafico-comportamento">
                     <GraficoComportamento />
                 </div>
+            </div>
         </div>
+            
     </div>
     
 
@@ -51,6 +52,12 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .row-inferior{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row; 
     }    
 
     .sidebar{
@@ -67,8 +74,14 @@
     .lista-pacientes{
         position: relative;
         display: flex;
-        height: 100%;
-        margin-bottom: 50px;
+
+    }
+
+    .grafico-comportamento{
+        margin-left: auto;
+        position: relative;
+        display: flex;
+        margin-right: 43px;
     }
 
     .header{
@@ -87,7 +100,6 @@
     .grafico-cliques{
         position: relative;
         display: flex;
-        
     }
     
 </style>
