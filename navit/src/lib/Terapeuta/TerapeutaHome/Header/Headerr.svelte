@@ -20,6 +20,6 @@
 </style>
 
 <script>
-    import SearchCase from "./searchCase.svelte";
-    import PFP from "./PFP.svelte";
+    import SearchCase from "$lib/Terapeuta/TerapeutaHome/Header/SearchCase.svelte";
+    import PFP from "$lib/Terapeuta/TerapeutaHome/Header/PFP.svelte";
 </script>
