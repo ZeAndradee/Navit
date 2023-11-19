@@ -3,7 +3,7 @@
     // import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaciente/infoPaciente.svelte";
     // import Cardtemptela from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardtempotela/cardtemptela.svelte";
     // import Cardbotaoutilizado from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardbotaoutilizado/cardbotaoutilizado.svelte";
-    import SideBarMenuProntuario from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuProntuario.svelte";
+    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
     import Header from "$lib/Terapeuta/TerapeutaHome/header/header.svelte";
 </script>
 
@@ -13,7 +13,7 @@
 </div>
 
 <div class="sidebar">
-    <SideBarMenuProntuario></SideBarMenuProntuario>
+    <SideBarMenuInicio />
 </div>
 
 
