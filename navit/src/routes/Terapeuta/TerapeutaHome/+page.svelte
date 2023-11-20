@@ -1,5 +1,5 @@
 <script>
-    
+    import Headerr from "$lib/Terapeuta/TerapeutaHome/Header/Headerr.svelte"
     import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
     import GraficoCliques from "$lib/Terapeuta/TerapeutaHome/GraficosCliques/GraficoCliques.svelte"
@@ -19,7 +19,7 @@
         <div class="column">
             <div class="header">
                 <div class="search-case">
-                    
+                    <Headerr />
                 </div>
             </div>
             <div class="grafico-cliques">
