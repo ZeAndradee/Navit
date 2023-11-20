@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        .search-bar {
+            display: flex;
+            width: 226px;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left: 275px;
+        }
+
+        .search-bar input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            font-family: "Inter", Arial, sans-serif;
+        }
+
+        .search-bar input:focus { outline: none; }
+
+        .search-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bloco-prontuario {
+            display: flex;
+            width: 178px;
+            padding: 4px 24px;
+            border-radius: 12px 12px 0px 0px;
+            background: #FFF;
+            margin-top: 20px;
+            margin-left: 275px;
+        }
+
+        .texto-prontuario {
+            color: #666;
+            font-family: "Inter", Arial, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-left: 38.5px;
+        }
+
+        .bola-prontuarios {
+            display: flex;
+            align-items: center; 
+            width: 28px;
+            padding: 8px 4px 8px 4px;
+            border-radius: 120px; 
+            background: rgba(206, 6, 6, 0.20);
+            margin-left: 10px;
+        }
+
+        .numero-bola {
+            color: #CE0606;
+            font-family: "Inter", Arial, sans-serif;
+            width: 7px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-left: 8px;
+        }
+
+        .tabela {
+            display: flex;
+            flex-direction: column;
+            width: 793px;
+            background-color: white;
+            border-radius: 0px 8px 8px 8px;
+            margin-left: 275px;
+        }
+
+        .linha {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            border-bottom: 1px solid #ccc; /* Linha separadora entre cabeçalho e dados */
+        }
+
+        .linha img {
+            width: 12px;
+            height: 13px;
+            margin-right: 8px;
+        }
+
+        .coluna {
+            display: flex;
+            align-items: center;
+        }
+
+        .cabecalho {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Pesquisar" name="q">
+            <button type="submit" class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 13" fill="none">
+                    <path d="M5 2.5C3.34315 2.5 2 3.84315 2 5.5C2 7.15685 3.34315 8.5 5 8.5C6.65685 8.5 8 7.15685 8 5.5C8 3.84315 6.65685 2.5 5 2.5ZM1 5.5C1 3.29086 2.79086 1.5 5 1.5C7.20914 1.5 9 3.29086 9 5.5C9 6.42436 8.68646 7.27548 8.15993 7.95282L10.8536 10.6464C11.0488 10.8417 11.0488 11.1583 10.8536 11.3536C10.6583 11.5488 10.3417 11.5488 10.1464 11.3536L7.45282 8.65993C6.77548 9.18646 5.92436 9.5 5 9.5C2.79086 9.5 1 7.70914 1 5.5Z" fill="#666666"/>
+                </svg>
+            </button>
+        </form>
+        <div class="bloco-prontuario">
+            <p class="texto-prontuario">Prontuários</p>
+            <div class="bola-prontuarios">
+                <span class="numero-bola">5</span>
+            </div>
+        </div>
+        <div class="tabela">
+            <div class="linha cabecalho">
+                <div class="coluna">
+                    <img src="icone.svg" alt="Ícone">
+                    <span>Status</span>
+                </div>
+                <div class="coluna">
+                    <img src="icone.svg" alt="Ícone">
+                    <span>Nome Paciente</span>
+                </div>
+                <div class="coluna">
+                    <img src="icone.svg" alt="Ícone">
+                    <span>Data de
+                        Nascimento
+                    </span>
+                </div>
+                <div class="coluna">
+                    <img src="icone.svg" alt="Ícone">
+                    <span>Sessão</span>
+                </div>
+                <div class="coluna">
+                    <img src="icone.svg" alt="Ícone">
+                    <span>Última atualização</span>
+                </div>
+            </div>
+  
+    </div>
+</body>
+</html>
