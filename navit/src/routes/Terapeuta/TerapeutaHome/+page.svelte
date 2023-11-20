@@ -1,5 +1,5 @@
 <script>
-    import header from "$lib/Terapeuta/TerapeutaHome/header/header.svelte";
+    import header from "$lib/Terapeuta/TerapeutaHome/Header/Header.svelte"
     import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte";
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/EstatisticasDiarias.svelte"
     import GraficoCliques from "$lib/Terapeuta/TerapeutaHome/GraficosCliques/GraficoCliques.svelte"
