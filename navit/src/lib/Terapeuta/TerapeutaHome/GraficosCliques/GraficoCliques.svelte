@@ -13,7 +13,7 @@
         const ctx = canvas.getContext('2d');
         if (ctx) {
             // Crie um gradiente
-            const gradient = ctx.createLinearGradient(0, 0, 0, 250);
+            const gradient = ctx.createLinearGradient(0, 0, 0, 150);
             gradient.addColorStop(0, '#a7cafc');// Cor no topo
             gradient.addColorStop(0.3, '#c6dcfb');// Cor no topo
             gradient.addColorStop(0.6, '#e9f0fa');// Cor no topo
@@ -47,8 +47,8 @@
                     ]
                 },
                 options: {
-                    
-                    maintainAspectRatio: true,
+                    responsive: false,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             display: false,
@@ -76,6 +76,28 @@
     });
   </script>
     <div class="card-grafico">
+        <div class="header-grafico">
+                <div>
+                    <div><span style="font-weight:600">Cliques Registrados</span></div>
+                </div>
+                <div class="intervalo"><span>2023 - Set 2023</span></div>
+                <div style="margin-left: 8px;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="#656575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div style="display:flex; flex-direction:row; align-items: center; margin-left:auto; margin-right: 28px; gap:32px">
+                    <div class="intervalo2">
+                         <div style="width: 10px; height: 10px; background-color: #006AFF; border-radius: 50%; margin-right:8px"></div>
+                         <span>Últimos 6 Meses</span>
+                    </div>
+                    <div class="intervalo2"> 
+                        <div style="width: 10px; height: 10px; background-color: #656575; border-radius: 50%;  margin-right:8px"></div>
+                        <span>Mesmo Periodo Ano Passado</span>
+                    </div>
+                </div>
+        </div>
+    <div>
         <div class="valores-grafico">
             <div class="y-valores">
                 <span>5000</span>
@@ -84,13 +106,29 @@
                 <span>500</span>
             </div>
             <div class="grafico">
-                <canvas class="canvas-grafico" bind:this={canvas} style="width: 100%; height: 126px;"/>
+                <canvas class="canvas-grafico" bind:this={canvas} style="width: 100%; height: 100%;"/>
             </div>
         </div>
-        
+        </div>
     </div>
 
   <style>
+
+    
+
+    .header-grafico{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    .intervalo{
+        margin-left: 32px;
+    }
+    .intervalo2{
+        display: flex;
+        align-items: center;
+    }
     .card-grafico{
         display: flex;
         flex-direction: column;
@@ -98,11 +136,12 @@
         height: 283px;
         background-color: white;
         border-radius: 10px;
-        padding: 32px 28px 24px 28px;
+        padding: 22px 28px 24px 28px;
         margin-left: 28px;
         margin-top: 28px;
-        margin-right: 6px;
+        margin-right: 48px;
     }
+
     .valores-grafico{
         display: flex; 
         flex-direction:row;
@@ -119,11 +158,21 @@
     }
     .grafico{
         width: 100%;
+        height: 100%;
+        margin-right: 58px;
+
     }
 
     .canvas-grafico{
       margin-left: 32px;
       display: flex;
       width: 100%;
+      
+    }
+
+    @media (max-width: 1514px) {
+        .intervalo2{
+            display: none;
+        }
     }
   </style>

@@ -1,7 +1,8 @@
 <componente1>
-    <div>
-      <h1 class="Titulo">Bem Vindo, Lucas</h1>
-
+    <div class="Titulocentral">
+        <div>
+            <h1 class="Titulo">Bem Vindo, Lucas</h1>
+        </div>
     </div>
     <div class="container">
         
@@ -24,11 +25,21 @@
     </div>
 </componente1>
 <style>
+  .Titulocentral{
+    color: #151515;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 266.667% */
+
+}
   .container {
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px; 
+    gap: 8px;
 }
 
 .box {
@@ -38,12 +49,12 @@
     align-items: center;
     width: 160px; 
     height: 80px; 
-    background-color: #f9f9f9; 
+    background-color: #ffffff; 
     border-radius: 8px;
     padding: 10px;
     margin: 0 10px;
     box-sizing: border-box;
-    border: none; 
+    border: none;
 }
 
 
