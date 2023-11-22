@@ -6,21 +6,21 @@
 
 <div class="card-config">
     <div class="header-row">
-        <div class="txt-header" on:click={() => selectedButton = 'config'} style="border-color: {selectedButton === 'config' ? '#006AFF' : '#E0E4EC'}">
+        <button class="txt-header" on:click={() => selectedButton = 'config'} style="border-color: {selectedButton === 'config' ? '#006AFF' : '#E0E4EC'}">
             <span style="color: {selectedButton === 'config' ? '#006AFF' : '#717B8C'}">Configurações da Conta</span>
-        </div>
-        <div class="txt-header" on:click={() => selectedButton = 'login'} style="border-color: {selectedButton === 'login' ? '#006AFF' : '#E0E4EC'}">
+        </button>
+        <button class="txt-header" on:click={() => selectedButton = 'login'} style="border-color: {selectedButton === 'login' ? '#006AFF' : '#E0E4EC'}">
             <span style="color: {selectedButton === 'login' ? '#006AFF' : '#717B8C'}">Login e Segurança</span>
-        </div>
-        <div class="txt-header" on:click={() => selectedButton = 'interface'} style="border-color: {selectedButton === 'interface' ? '#006AFF' : '#E0E4EC'}">
+        </button>
+        <button class="txt-header" on:click={() => selectedButton = 'interface'} style="border-color: {selectedButton === 'interface' ? '#006AFF' : '#E0E4EC'}">
             <span style="color: {selectedButton === 'interface' ? '#006AFF' : '#717B8C'}">Interface</span>
-        </div>
-        <div class="txt-header" on:click={() => selectedButton = 'notificacao'} style="border-color: {selectedButton === 'notificacao' ? '#006AFF' : '#E0E4EC'}">
+        </button>
+        <button class="txt-header" on:click={() => selectedButton = 'notificacao'} style="border-color: {selectedButton === 'notificacao' ? '#006AFF' : '#E0E4EC'}">
             <span style="color: {selectedButton === 'notificacao' ? '#006AFF' : '#717B8C'}">Notificações</span>
-        </div>
-        <div class="txt-header" on:click={() => selectedButton = 'duvidas'} style="border-color: {selectedButton === 'duvidas' ? '#006AFF' : '#E0E4EC'}">
+        </button>
+        <button class="txt-header" on:click={() => selectedButton = 'duvidas'} style="border-color: {selectedButton === 'duvidas' ? '#006AFF' : '#E0E4EC'}">
             <span style="color: {selectedButton === 'logduvidasin' ? '#006AFF' : '#717B8C'}">Dúvidas</span>
-        </div>
+        </button>
     </div>
     
     <div class="div">

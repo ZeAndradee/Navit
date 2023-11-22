@@ -1,7 +1,7 @@
 <div class="configuracoes-conta-card">
     <div class="foto-perfil">
         <span>Sua foto de perfil</span>
-        <div class="perfil-portrait">
+        <button class="perfil-portrait">
             <div>
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99994 7.75839C10.74 7.26392 11.61 7 12.5 7C13.0714 7 13.5346 7.46322 13.5346 8.03464C13.5346 8.60606 13.0714 9.06928 12.5 9.06928C12.0193 9.06928 11.5493 9.21184 11.1496 9.47893C10.7498 9.74602 10.4383 10.1256 10.2543 10.5698C10.0703 11.014 10.0222 11.5027 10.116 11.9742C10.2098 12.4457 10.4413 12.8788 10.7812 13.2188C11.1212 13.5587 11.5543 13.7902 12.0258 13.884C12.4973 13.9778 12.986 13.9297 13.4302 13.7457C13.8744 13.5617 14.254 13.2502 14.5211 12.8504C14.7882 12.4507 14.9307 11.9807 14.9307 11.5C14.9307 10.9286 15.3939 10.4654 15.9654 10.4654C16.5368 10.4654 17 10.9286 17 11.5C17 12.39 16.7361 13.26 16.2416 14.0001C15.7471 14.7401 15.0443 15.3169 14.2221 15.6575C13.3998 15.998 12.495 16.0872 11.6221 15.9135C10.7492 15.7399 9.94736 15.3113 9.31802 14.682C8.68868 14.0526 8.2601 13.2508 8.08647 12.3779C7.91283 11.505 8.00195 10.6002 8.34254 9.77792C8.68314 8.95566 9.25991 8.25285 9.99994 7.75839Z" fill="#8D98AA"/>
@@ -13,7 +13,7 @@
                     </svg>
             </div>
             <div><span>Envie sua foto</span></div>    
-        </div>
+        </button>
     </div>
     <div class="divide-line">
     </div>
@@ -36,7 +36,7 @@
             <div class="input-form-phone" style="margin-left: auto;">
                 <label for="phoneNumber" style="font-weight:500">Número de Celular</label>
                 <div class="phone-number">
-                    <span style="margin-left: 5px; margin-right: 5px">+55</span>
+                    <span style="margin-left: 5px; margin-right: 7px">+55</span>
                     <div class="line-divider-phone"></div>
                     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Por favor insira seu número de celular com DDD">
                 </div>
@@ -112,6 +112,11 @@
         border-radius: 8px;
         border: 1px solid #E0E4EC;
         background: linear-gradient(0deg, #EDF2F6 0%, #EDF2F6 100%), #FFF;
+        
+    }
+
+    .input-form input::placeholder{
+        color: #8D98AA;
     }
 
     .phone-number{
@@ -124,17 +129,34 @@
         background: linear-gradient(0deg, #EDF2F6 0%, #EDF2F6 100%), #FFF;
     }
 
+    .input-form-phone{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 40px;
+    }
+
+    .line-divider-phone{
+        width: 1px;
+        height: 60%;
+        background: #E0E4EC;
+    }
     
     .phone-number input{
         width: 100%;
         height: 100%;
         font-size: 14px;
-        border-top: 1px solid #E0E4EC;
-        border-right: 1px solid #E0E4EC;
-        border-bottom: 1px solid #E0E4EC;
+        border: none;
         border-left: none;
         border-radius: 8px;
         background: linear-gradient(0deg, #EDF2F6 0%, #EDF2F6 100%), #FFF;
+    }
+    .phone-number span{
+        color: #8D98AA;
+    }
+
+    .phone-number input::placeholder{
+        color: #8D98AA;
     }
 
 

@@ -22,7 +22,7 @@
 </div>
 
 <style>
-    
+    /* Inicio Elementos Padrão*/
     .row{
         display: flex;
         flex-direction: row;
@@ -34,13 +34,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
-    .row-inferior{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row; 
-    }    
+    }  
 
     .sidebar{
         position: relative;
@@ -61,6 +55,7 @@
         width: 100%;
         margin-left: auto;
     }
+/* Fim Elementos Padrão*/
 
     .configuracoes{
         width: 100%;
