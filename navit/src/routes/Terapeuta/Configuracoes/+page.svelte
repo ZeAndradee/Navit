@@ -64,6 +64,10 @@
 
     .configuracoes{
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        display: flex;
+        
+        margin-top: 32px;
+        margin-bottom: 64px;
     }
 </style>
