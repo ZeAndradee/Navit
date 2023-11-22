@@ -141,6 +141,7 @@
          </div>
       </ul>
                <!--Opção Sair-->
+            <a href="/Login">   
                <div class="btn-Sair">
                   <div class="txticon">
                      <div class="icon" style="margin-top: 5%;">
@@ -155,6 +156,7 @@
                      </div> 
                   </div>
                </div>
+            </a>   
    </div>   
 </aside>
 

@@ -3,22 +3,20 @@
     // import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaciente/infoPaciente.svelte";
     // import Cardtemptela from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardtempotela/cardtemptela.svelte";
     // import Cardbotaoutilizado from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardbotaoutilizado/cardbotaoutilizado.svelte";
-    import SideBarMenuProntuario from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuProntuario.svelte";
-    import Header from "$lib/Terapeuta/TerapeutaHome/header/header.svelte";
+    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
+    import HeaderProntuario from "$lib/Terapeuta/Terapeuta-Prontuarios1/headerProntuarioPaciente/HeaderProntuario.svelte";
 </script>
 
 
 <div class="header_pesquisa">
-    <Header></Header>
+    <HeaderProntuario />
 </div>
 
 <div class="sidebar">
-    <SideBarMenuProntuario></SideBarMenuProntuario>
+    <SideBarMenuInicio />
 </div>
 
 
 <style>
-.header_pesquisa{
-    
-}
+
 </style>

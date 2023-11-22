@@ -102,4 +102,12 @@
         display: flex;
     }
     
+    @media (max-width: 1493px){
+        .row-inferior{
+            flex-direction: column;
+        }
+        .grafico-comportamento{
+            margin-left: 0;
+        }
+    }
 </style>

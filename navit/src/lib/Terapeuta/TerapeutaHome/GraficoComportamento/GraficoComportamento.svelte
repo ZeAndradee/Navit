@@ -62,7 +62,7 @@
 </script>
 
 <div class="card-grafico-comportamento">
-
+    <span style="font-weight: 600; color: #1A1919">Média Pacientes</span>
     <div class="grafico">
         <canvas bind:this={canvas}></canvas>
     </div>
