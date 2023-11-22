@@ -47,6 +47,11 @@
                     ]
                 },
                 options: {
+                    layout:{
+                        padding: {
+                            top: 3,
+                        },
+                    },
                     responsive: false,
                     maintainAspectRatio: false,
                     plugins: {
@@ -113,9 +118,6 @@
     </div>
 
   <style>
-
-    
-
     .header-grafico{
         display: flex;
         flex-direction: row;
@@ -136,7 +138,7 @@
         height: 283px;
         background-color: white;
         border-radius: 10px;
-        padding: 22px 28px 24px 28px;
+        padding: 32px 28px 24px 28px;
         margin-left: 28px;
         margin-top: 28px;
         margin-right: 48px;
@@ -160,14 +162,12 @@
         width: 100%;
         height: 100%;
         margin-right: 58px;
-
     }
 
     .canvas-grafico{
       margin-left: 32px;
       display: flex;
       width: 100%;
-      
     }
 
     @media (max-width: 1514px) {

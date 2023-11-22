@@ -18,6 +18,8 @@
         background: white;
         border-radius: 10px;
         outline: none;
+        margin-left: auto;
+        margin-right: auto;
         
     }
 
