@@ -1,7 +1,7 @@
 <script>
     import ConfiguracoesConta from "$lib/Terapeuta/Configuracoes/ConfiguracoesConta.svelte";
     import LoginESeguranca from "$lib/Terapeuta/Configuracoes/LoginESeguranca.svelte";
-    let selectedButton = '';
+    let selectedButton = 'config';
 </script>
 
 <div class="card-config">

@@ -1,3 +1,7 @@
+<script>
+    let focused = false;
+</script>
+
 <div class="configuracoes-conta-card">
     <div class="foto-perfil">
         <span>Sua foto de perfil</span>
@@ -42,7 +46,18 @@
                 </div>
             </div>
         </div>
-        
+        <!-- <div class="input-form-bio">
+            <label for="bio" style="font-weight:500">Bio</label>
+            <textarea placeholder="Escreva sua bio aqui. Hobbies, interesses e etc..."></textarea>
+        </div> -->
+    </div>
+    <div class="row3-btn">
+        <div>
+            <button class="btn-save-profile">Atualizar Perfil</button>
+        </div>
+        <div>
+            <button class="btn-reset-profile">Reiniciar Perfil</button>
+        </div>
     </div>
 </div>
 
@@ -159,5 +174,64 @@
         color: #8D98AA;
     }
 
+    .btn-save-profile{
+        width: 201px;
+        height: 49px;
+        border-radius: 8px;
+        background: #006AFF;
+        color: white;
+        font-weight: 500;
+    }
+
+    .row3-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        gap: 50px;
+    }
+
+    @media (max-width: 1621px){
+    .input-form input{
+        width: 30vw;
+    }
+    .phone-number{
+        width: 30vw;
+    }
+
+}
+    @media (max-width: 1406px){
+    .input-form input{
+        width: 22vw;
+    }
+    .phone-number{
+        width: 22vw;
+    }
+
+}
+    @media (max-width: 1406px){
+    .input-form input{
+        width: 22vw;
+    }
+    .phone-number{
+        width: 22vw;
+    }
+
+}
+
+    /* .input-form-bio{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+    .input-form-bio textarea::placeholder{
+        color: #8D98AA;
+    } */
 
 </style>
