@@ -48,9 +48,9 @@
 
 <script>
   // @ts-nocheck
-  import Card1 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/Card1.svelte";
-  import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/Card2.svelte";
-  import Card3 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/Card3.svelte";
+  import Card1 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card1.svelte";
+  import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
+  import Card3 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3.svelte";
 
 
   // Data e hora estatisticas diarias

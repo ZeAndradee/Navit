@@ -1,7 +1,7 @@
 <script>
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/Header.svelte"
     import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
-    import Configuracoes from "$lib/Terapeuta/Configuracoes/Configuracoes.svelte"
+    import Configuracoes from "$lib/Terapeuta/Configuracoes/configuracoes.svelte"
 </script>
 
 <div class="row">
