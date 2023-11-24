@@ -242,27 +242,7 @@
       margin-top: 20%;
    }
 
-/*Estilo 1 Opção Sidebar*/
-   .btn-Clicado{
-      width: 100%;
-      height: 48px;
-      display: flex;     
-      align-items: center;
-      border-radius: 4px;
-      background: #006AFF;
-      margin-top: 8px;
-   }
-
-   
-   .txtw{
-      font-family: 'Inter', Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      color: white;
-      
-   }
-
-   /*Estilo 2 Opção Sidebar*/
+   /*Estilo Opção Sidebar*/
    .btn-NClicado{
       width: 100%;
       height: 48px;
