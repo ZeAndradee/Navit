@@ -32,7 +32,7 @@
                            </svg>
                         </div>  
                         <div class="txtw">
-                           <span class="txtclicado">Início</span>
+                           <span class="txtclicado">Inícioo</span>
                         </div> 
                      </div>
                   </div>
