@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="sidebar">
-        <SideBarMenuInicio />
+        <SideBarMenuInicio selectedButton="configuracoes" />
     </div>
 <div class="column">
         <div class="header">

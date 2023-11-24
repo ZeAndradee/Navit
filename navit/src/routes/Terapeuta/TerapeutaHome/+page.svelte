@@ -9,7 +9,7 @@
 
     <div class="row">
         <div class="sidebar">
-            <SideBarMenuInicio />
+            <SideBarMenuInicio selectedButton="inicio" />
         </div>
 
         <div class="estatisticas">
@@ -108,6 +108,12 @@
         }
         .grafico-comportamento{
             margin-left: 0;
+        }
+    }
+
+    @media(max-width: 1162px){
+        .header{
+            margin-right: 20px;
         }
     }
 </style>

@@ -35,7 +35,7 @@
     
     @media(max-width: 1162px){
         .search-bar{
-            margin-right: 50px;
+            margin-right: 80px;
         }
     }
 
