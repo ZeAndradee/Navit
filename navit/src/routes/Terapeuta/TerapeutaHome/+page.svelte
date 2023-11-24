@@ -9,7 +9,7 @@
 
     <div class="row">
         <div class="sidebar">
-            <SideBarMenuInicio />
+            <SideBarMenuInicio selectedButton="inicio" />
         </div>
 
         <div class="estatisticas">
