@@ -24,7 +24,7 @@
             <!--Opção 1 Sidebar-->
             <li>
                <a href="/Terapeuta/TerapeutaHome">
-                  <button class="btn-NClicado" on:click={() => selectedButton = 'inicio'}>
+                  <button class="btn-NClicado" on:click={() => selectedButton = 'inicio' } style="background-color: {selectedButton === 'inicio' ? '#006AFF' : 'transparent'}">
                      <div class="txticon">
                         <div class="icon">
                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: {selectedButton === 'inicio' ? 'white' : 'black'}">
