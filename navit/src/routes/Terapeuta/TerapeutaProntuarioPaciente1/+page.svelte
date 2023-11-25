@@ -18,5 +18,13 @@
         display: flex;
         flex-direction: row;
         height: 100%;
-        }
+    }
+
+    .sidebar{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    margin-right: 10px;
+        
+    }    
 </style>
