@@ -34,118 +34,13 @@
                 <div class="title-5">
                 <span>Notificações no desktop</span>
                 </div>
-                    <div class="row4"  style="margin-left: 22px;">
+                    <div class="row4"  style="margin-left: 20px;">
                         <div class="column-2">
-                            <svg
-                            width="36"
-                            height="24"
-                            viewBox="0 0 36 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M29.3887 18H10.4998C6.81645 18 3.88867 14.9 3.88867 11C3.88867 7.1 6.81645 4 10.4998 4H29.3887C33.072 4 35.9998 7.1 35.9998 11C35.9998 14.9 33.072 18 29.3887 18Z"
-                                fill="#3C3C43"
-                                fill-opacity="0.3"
-                            />
-                            <g filter="url(#filter0_dd_1070_1099)">
-                                <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M11.4444 21C16.6605 21 20.8889 16.5228 20.8889 11C20.8889 5.47715 16.6605 1 11.4444 1C6.22842 1 2 5.47715 2 11C2 16.5228 6.22842 21 11.4444 21Z"
-                                fill="white"
-                                />
-                                <path
-                                d="M20.6389 11C20.6389 16.3984 16.5091 20.75 11.4444 20.75C6.37976 20.75 2.25 16.3984 2.25 11C2.25 5.60157 6.37976 1.25 11.4444 1.25C16.5091 1.25 20.6389 5.60157 20.6389 11Z"
-                                stroke="url(#paint0_linear_1070_1099)"
-                                stroke-width="0.5"
-                                />
-                                <path
-                                d="M20.6389 11C20.6389 16.3984 16.5091 20.75 11.4444 20.75C6.37976 20.75 2.25 16.3984 2.25 11C2.25 5.60157 6.37976 1.25 11.4444 1.25C16.5091 1.25 20.6389 5.60157 20.6389 11Z"
-                                stroke="url(#paint1_linear_1070_1099)"
-                                stroke-width="0.5"
-                                />
-                            </g>
-                            <defs>
-                                <filter
-                                id="filter0_dd_1070_1099"
-                                x="0"
-                                y="0"
-                                width="22.8887"
-                                height="24"
-                                filterUnits="userSpaceOnUse"
-                                color-interpolation-filters="sRGB"
-                                >
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix
-                                    in="SourceAlpha"
-                                    type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                    result="hardAlpha"
-                                />
-                                <feOffset dy="1" />
-                                <feGaussianBlur stdDeviation="1" />
-                                <feColorMatrix
-                                    type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-                                />
-                                <feBlend
-                                    mode="normal"
-                                    in2="BackgroundImageFix"
-                                    result="effect1_dropShadow_1070_1099"
-                                />
-                                <feColorMatrix
-                                    in="SourceAlpha"
-                                    type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                    result="hardAlpha"
-                                />
-                                <feOffset dy="0.1" />
-                                <feGaussianBlur stdDeviation="0.15" />
-                                <feColorMatrix
-                                    type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                                />
-                                <feBlend
-                                    mode="normal"
-                                    in2="effect1_dropShadow_1070_1099"
-                                    result="effect2_dropShadow_1070_1099"
-                                />
-                                <feBlend
-                                    mode="normal"
-                                    in="SourceGraphic"
-                                    in2="effect2_dropShadow_1070_1099"
-                                    result="shape"
-                                />
-                                </filter>
-                                <linearGradient
-                                id="paint0_linear_1070_1099"
-                                x1="2.09242"
-                                y1="1"
-                                x2="2.09242"
-                                y2="20.8043"
-                                gradientUnits="userSpaceOnUse"
-                                >
-                                <stop stop-opacity="0.01" />
-                                <stop offset="0.8" stop-opacity="0.02" />
-                                <stop offset="1" stop-opacity="0.04" />
-                                </linearGradient>
-                                <linearGradient
-                                id="paint1_linear_1070_1099"
-                                x1="2"
-                                y1="1"
-                                x2="2"
-                                y2="21"
-                                gradientUnits="userSpaceOnUse"
-                                >
-                                <stop stop-color="white" stop-opacity="0.12" />
-                                <stop offset="0.2" stop-color="white" stop-opacity="0.06" />
-                                <stop offset="1" stop-color="white" stop-opacity="0.01" />
-                                </linearGradient>
-                            </defs>
-                            </svg>
+                            <!-- Rounded switch -->
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
                         </div>
                         <div class="column-2">
                             <span class="bg-title">Receber Notificações no Desktop</span>
@@ -161,116 +56,11 @@
                         <!-- Opcao 1 -->
                         <div class="row4">
                             <div class="column-2">
-                                <svg
-                                width="36"
-                                height="24"
-                                viewBox="0 0 36 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                >
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M29.3887 18H10.4998C6.81645 18 3.88867 14.9 3.88867 11C3.88867 7.1 6.81645 4 10.4998 4H29.3887C33.072 4 35.9998 7.1 35.9998 11C35.9998 14.9 33.072 18 29.3887 18Z"
-                                    fill="#3C3C43"
-                                    fill-opacity="0.3"
-                                />
-                                <g filter="url(#filter0_dd_1070_1099)">
-                                    <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M11.4444 21C16.6605 21 20.8889 16.5228 20.8889 11C20.8889 5.47715 16.6605 1 11.4444 1C6.22842 1 2 5.47715 2 11C2 16.5228 6.22842 21 11.4444 21Z"
-                                    fill="white"
-                                    />
-                                    <path
-                                    d="M20.6389 11C20.6389 16.3984 16.5091 20.75 11.4444 20.75C6.37976 20.75 2.25 16.3984 2.25 11C2.25 5.60157 6.37976 1.25 11.4444 1.25C16.5091 1.25 20.6389 5.60157 20.6389 11Z"
-                                    stroke="url(#paint0_linear_1070_1099)"
-                                    stroke-width="0.5"
-                                    />
-                                    <path
-                                    d="M20.6389 11C20.6389 16.3984 16.5091 20.75 11.4444 20.75C6.37976 20.75 2.25 16.3984 2.25 11C2.25 5.60157 6.37976 1.25 11.4444 1.25C16.5091 1.25 20.6389 5.60157 20.6389 11Z"
-                                    stroke="url(#paint1_linear_1070_1099)"
-                                    stroke-width="0.5"
-                                    />
-                                </g>
-                                <defs>
-                                    <filter
-                                    id="filter0_dd_1070_1099"
-                                    x="0"
-                                    y="0"
-                                    width="22.8887"
-                                    height="24"
-                                    filterUnits="userSpaceOnUse"
-                                    color-interpolation-filters="sRGB"
-                                    >
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix
-                                        in="SourceAlpha"
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                        result="hardAlpha"
-                                    />
-                                    <feOffset dy="1" />
-                                    <feGaussianBlur stdDeviation="1" />
-                                    <feColorMatrix
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-                                    />
-                                    <feBlend
-                                        mode="normal"
-                                        in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_1070_1099"
-                                    />
-                                    <feColorMatrix
-                                        in="SourceAlpha"
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                        result="hardAlpha"
-                                    />
-                                    <feOffset dy="0.1" />
-                                    <feGaussianBlur stdDeviation="0.15" />
-                                    <feColorMatrix
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                                    />
-                                    <feBlend
-                                        mode="normal"
-                                        in2="effect1_dropShadow_1070_1099"
-                                        result="effect2_dropShadow_1070_1099"
-                                    />
-                                    <feBlend
-                                        mode="normal"
-                                        in="SourceGraphic"
-                                        in2="effect2_dropShadow_1070_1099"
-                                        result="shape"
-                                    />
-                                    </filter>
-                                    <linearGradient
-                                    id="paint0_linear_1070_1099"
-                                    x1="2.09242"
-                                    y1="1"
-                                    x2="2.09242"
-                                    y2="20.8043"
-                                    gradientUnits="userSpaceOnUse"
-                                    >
-                                    <stop stop-opacity="0.01" />
-                                    <stop offset="0.8" stop-opacity="0.02" />
-                                    <stop offset="1" stop-opacity="0.04" />
-                                    </linearGradient>
-                                    <linearGradient
-                                    id="paint1_linear_1070_1099"
-                                    x1="2"
-                                    y1="1"
-                                    x2="2"
-                                    y2="21"
-                                    gradientUnits="userSpaceOnUse"
-                                    >
-                                    <stop stop-color="white" stop-opacity="0.12" />
-                                    <stop offset="0.2" stop-color="white" stop-opacity="0.06" />
-                                    <stop offset="1" stop-color="white" stop-opacity="0.01" />
-                                    </linearGradient>
-                                </defs>
-                                </svg>
+                                <!-- Rounded switch -->
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
                             </div>
                             <div class="column-2">
                                 <span class="bg-title">Novos Pacientes</span>
@@ -281,116 +71,11 @@
                         <!-- Opcao 2 -->
                         <div class="row4">
                             <div class="column-2">
-                                <svg
-                                width="36"
-                                height="24"
-                                viewBox="0 0 36 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                >
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M29.3887 18H10.4998C6.81645 18 3.88867 14.9 3.88867 11C3.88867 7.1 6.81645 4 10.4998 4H29.3887C33.072 4 35.9998 7.1 35.9998 11C35.9998 14.9 33.072 18 29.3887 18Z"
-                                    fill="#3C3C43"
-                                    fill-opacity="0.3"
-                                />
-                                <g filter="url(#filter0_dd_1070_1099)">
-                                    <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M11.4444 21C16.6605 21 20.8889 16.5228 20.8889 11C20.8889 5.47715 16.6605 1 11.4444 1C6.22842 1 2 5.47715 2 11C2 16.5228 6.22842 21 11.4444 21Z"
-                                    fill="white"
-                                    />
-                                    <path
-                                    d="M20.6389 11C20.6389 16.3984 16.5091 20.75 11.4444 20.75C6.37976 20.75 2.25 16.3984 2.25 11C2.25 5.60157 6.37976 1.25 11.4444 1.25C16.5091 1.25 20.6389 5.60157 20.6389 11Z"
-                                    stroke="url(#paint0_linear_1070_1099)"
-                                    stroke-width="0.5"
-                                    />
-                                    <path
-                                    d="M20.6389 11C20.6389 16.3984 16.5091 20.75 11.4444 20.75C6.37976 20.75 2.25 16.3984 2.25 11C2.25 5.60157 6.37976 1.25 11.4444 1.25C16.5091 1.25 20.6389 5.60157 20.6389 11Z"
-                                    stroke="url(#paint1_linear_1070_1099)"
-                                    stroke-width="0.5"
-                                    />
-                                </g>
-                                <defs>
-                                    <filter
-                                    id="filter0_dd_1070_1099"
-                                    x="0"
-                                    y="0"
-                                    width="22.8887"
-                                    height="24"
-                                    filterUnits="userSpaceOnUse"
-                                    color-interpolation-filters="sRGB"
-                                    >
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix
-                                        in="SourceAlpha"
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                        result="hardAlpha"
-                                    />
-                                    <feOffset dy="1" />
-                                    <feGaussianBlur stdDeviation="1" />
-                                    <feColorMatrix
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-                                    />
-                                    <feBlend
-                                        mode="normal"
-                                        in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_1070_1099"
-                                    />
-                                    <feColorMatrix
-                                        in="SourceAlpha"
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                        result="hardAlpha"
-                                    />
-                                    <feOffset dy="0.1" />
-                                    <feGaussianBlur stdDeviation="0.15" />
-                                    <feColorMatrix
-                                        type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                                    />
-                                    <feBlend
-                                        mode="normal"
-                                        in2="effect1_dropShadow_1070_1099"
-                                        result="effect2_dropShadow_1070_1099"
-                                    />
-                                    <feBlend
-                                        mode="normal"
-                                        in="SourceGraphic"
-                                        in2="effect2_dropShadow_1070_1099"
-                                        result="shape"
-                                    />
-                                    </filter>
-                                    <linearGradient
-                                    id="paint0_linear_1070_1099"
-                                    x1="2.09242"
-                                    y1="1"
-                                    x2="2.09242"
-                                    y2="20.8043"
-                                    gradientUnits="userSpaceOnUse"
-                                    >
-                                    <stop stop-opacity="0.01" />
-                                    <stop offset="0.8" stop-opacity="0.02" />
-                                    <stop offset="1" stop-opacity="0.04" />
-                                    </linearGradient>
-                                    <linearGradient
-                                    id="paint1_linear_1070_1099"
-                                    x1="2"
-                                    y1="1"
-                                    x2="2"
-                                    y2="21"
-                                    gradientUnits="userSpaceOnUse"
-                                    >
-                                    <stop stop-color="white" stop-opacity="0.12" />
-                                    <stop offset="0.2" stop-color="white" stop-opacity="0.06" />
-                                    <stop offset="1" stop-color="white" stop-opacity="0.01" />
-                                    </linearGradient>
-                                </defs>
-                                </svg>
+                                <!-- Rounded switch -->
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
                             </div>
                             <div class="column-2">
                                 <span class="bg-title">Novas Consultas</span>
@@ -530,4 +215,72 @@
     margin-top: 40px;
     gap: 50px;
   }
+
+  /* Estilo Switch */
+  /* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 85px;
+  height: 34px;
+  transform: scale(0.7);
+}
+
+
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 </style>
