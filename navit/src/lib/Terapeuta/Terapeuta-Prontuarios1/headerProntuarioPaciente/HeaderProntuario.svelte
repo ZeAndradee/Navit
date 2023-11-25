@@ -1,6 +1,4 @@
-<script>
-    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
-</script>
+
 
 <componente1>
     <div class="Titulocentral">

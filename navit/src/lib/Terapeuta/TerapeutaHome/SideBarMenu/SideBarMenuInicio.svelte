@@ -175,7 +175,7 @@
                   </div>   
                </div>
             </li>
-            <div class="opcoes">
+         <div class="opcoes">
             <!--Opção 1 Sidebar-->
             <li>
                <a href="/Terapeuta/TerapeutaHome">
@@ -232,8 +232,8 @@
                            </svg>
                      </div>
                   </div>
-               </button>
-         </li>
+               </button> 
+            </li>
 
          <!--Opção 4 Sidebar-->
          <li>
@@ -280,25 +280,22 @@
          </button> 
          </li>
 
-      </div>
-      <!--Opção Sair-->
-      <li>
-         <a href="/Login">   
-               <div class="btn-Sair">
-                  <div class="txticon">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                           <path d="M8.33325 14.1666L12.4999 9.99998L8.33325 5.83331" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                           <path d="M12.5 10H2.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                           <path d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                           </svg>
-                     </div>
+      </div>         
+   </ul>   
+      <a href="/Login">   
+            <div class="btn-Sair">
+               <div class="txticon">
+                  <div class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M8.33325 14.1666L12.4999 9.99998L8.33325 5.83331" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.5 10H2.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                   </div>
                </div>
-            </a>
-      </li>         
-   </ul>   
-      
+            </div>
+         </a>
+   </div>
 </aside>
 
 <style>
@@ -408,10 +405,9 @@
     .sidebar-icons {
        display: flex;
        flex-direction: column;
-       justify-content: space-between;
-       width:60px;
+       width: 60px;
        height: 100%;
-       border: red solid 1px;
+       justify-content: space-between;
       }
 
       .opcoes{
@@ -420,7 +416,6 @@
          margin-top: 25px;
          margin-left: 10%;
          margin-right: 10%;
-         border: blue solid 1px;
       }
 
       .btn-NClicado{
@@ -435,6 +430,7 @@
      }
       
     .btn-Sair{
+      display: flex;
       flex-direction: row;
       align-items: center;
       width: fit-content;
@@ -442,6 +438,9 @@
       gap: 12px;
       border-radius: 8px;
       background: rgba(0, 106, 255, 0.20);
+      margin-left: auto;
+      margin-right: auto;
+      
    }
 }
 
