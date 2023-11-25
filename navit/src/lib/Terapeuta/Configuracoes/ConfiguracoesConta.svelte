@@ -46,17 +46,10 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="input-form-bio">
-            <label for="bio" style="font-weight:500">Bio</label>
-            <textarea placeholder="Escreva sua bio aqui. Hobbies, interesses e etc..."></textarea>
-        </div> -->
     </div>
     <div class="row3-btn">
         <div>
-            <button class="btn-save-profile">Atualizar Perfil</button>
-        </div>
-        <div>
-            <button class="btn-reset-profile">Reiniciar Perfil</button>
+            <button class="btn-save-profile">Salvar Alterações</button>
         </div>
     </div>
 </div>

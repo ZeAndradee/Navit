@@ -1,6 +1,11 @@
 <script>
-    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
+    import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte"
     import HeaderProntuario from "$lib/Terapeuta/Terapeuta-Prontuarios1/headerProntuarioPaciente/HeaderProntuario.svelte";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+    document.title = 'Prontuários Pacientes';
+  });
 </script>
 
 <div class="row">
