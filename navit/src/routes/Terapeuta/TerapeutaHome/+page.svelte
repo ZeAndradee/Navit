@@ -1,10 +1,15 @@
 <script>
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte"
-    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
+    import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte"
     import EstatisticasDiarias from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/estatisticasdiarias.svelte"
     import GraficoCliques from "$lib/Terapeuta/TerapeutaHome/GraficosCliques/GraficoCliques.svelte"
     import ListaPacientes from "$lib/Terapeuta/TerapeutaHome/ListaPacientess/ListaPacientes.svelte"
     import GraficoComportamento from "$lib/Terapeuta/TerapeutaHome/GraficoComportamento/GraficoComportamento.svelte"
+    import { onMount } from "svelte";
+
+    onMount(() => {
+    document.title = 'Página Inicial';
+  });
 </script>
 
     <div class="row">
