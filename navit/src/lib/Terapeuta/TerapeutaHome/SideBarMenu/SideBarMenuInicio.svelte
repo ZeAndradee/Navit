@@ -2,10 +2,7 @@
    export let selectedButton = '';
  </script>
 
-
-<button class="sidebar-button">Menu</button>
-
-<aside class="aside">
+<aside>
    <div class="sidebar">
       <ul>
          <!--Imagem Sidebar-->
@@ -144,40 +141,178 @@
          </div>
       </ul>
                <!--Opção Sair-->
-            <a href="/Login">   
+            <a href="/Login">
+               <div class="box-sair">  
+                  <div class="btn-Sair">
+                     <div class="txticon">
+                        <div class="icon" style="margin-top: 5%;">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path d="M8.33325 14.1666L12.4999 9.99998L8.33325 5.83331" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M12.5 10H2.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </div>  
+                        <div class="txt-Sair" style="font-size:18px; font-weight: 600;">
+                           <span class="txtclicado" style="color: black;">Sair</span>
+                        </div> 
+                     </div>
+                  </div>
+               </div> 
+            </a>   
+   </div>   
+</aside>
+
+<aside >
+   <div class="sidebar-icons">
+      <ul>
+         <!--Imagem Sidebar-->
+            <li>
+               <div class="header-sidebar-icons">
+                  <div class="img-topo">
+                     <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6863 4.85913C16.8035 4.11951 14.7666 3.80058 12.7332 3.92697C10.6997 4.05339 8.72409 4.62174 6.95925 5.58807L5.17859 6.56307L3.12248 3.18558L4.90313 2.21057C7.21424 0.945145 9.8013 0.200844 12.4642 0.0353341C15.1271 -0.130206 17.7945 0.287454 20.26 1.25597C22.7254 2.22452 24.9229 3.71796 26.6825 5.6208C28.4419 7.52361 29.7164 9.78483 30.4073 12.2295C31.0978 14.6741 31.1864 17.2367 30.6657 19.719C30.145 22.2013 29.0293 24.5367 27.4047 26.5446C25.7801 28.5525 23.6904 30.1791 21.297 31.2984C18.9036 32.4177 15.8164 33 13.6021 33C11.3877 33 10.0947 32.685 8.39672 32.0181C6.74646 31.3698 5.24701 30.4197 3.98393 29.2218C2.72087 28.0239 1.71897 26.6016 1.0354 25.0365C0.351849 23.4715 0 21.794 0 20.1C0 18.406 0.351849 16.7285 1.0354 15.1634C1.71897 13.5983 2.72087 12.1762 3.98393 10.9783C5.24701 9.78045 6.74646 8.83023 8.39672 8.18196C10.047 7.53366 11.8158 7.2 13.602 7.2C15.3882 7.2 17.157 7.53366 18.8072 8.18196C20.4575 8.83023 21.957 9.78045 23.22 10.9783C24.4831 12.1762 25.4849 13.5983 26.1685 15.1634C26.4627 15.8366 26.6952 16.5306 26.8651 17.2378C26.9479 15.8953 26.804 14.545 26.4352 13.2389C25.9075 11.372 24.9344 9.6453 23.5908 8.19225C22.2471 6.73917 20.569 5.59872 18.6863 4.85913ZM5.38936 24.6093C5.62258 20.4166 9.28114 17.0851 13.7601 17.0851C18.066 17.0851 21.6136 20.164 22.0887 24.1272C22.1894 23.9363 22.283 23.7419 22.3694 23.5441C22.8463 22.4522 23.0917 21.2819 23.0917 20.1C23.0917 18.9181 22.8463 17.7478 22.3694 16.6558C21.8925 15.5639 21.1935 14.5718 20.3123 13.736C19.4311 12.9003 18.3849 12.2374 17.2336 11.7851C16.0822 11.3328 14.8482 11.1 13.602 11.1C12.3558 11.1 11.1218 11.3328 9.97041 11.7851C8.81908 12.2374 7.77293 12.9003 6.89171 13.736C6.01053 14.5718 5.31151 15.5639 4.83459 16.6558C4.3577 17.7478 4.11223 18.9181 4.11223 20.1C4.11223 21.2819 4.3577 22.4522 4.83459 23.5441C4.99493 23.9112 5.18033 24.267 5.38936 24.6093ZM18.0305 25.035C18.0305 27.2718 16.1186 29.085 13.7601 29.085C11.4017 29.085 9.48975 27.2718 9.48975 25.035C9.48975 22.7983 11.4017 20.9851 13.7601 20.9851C16.1186 20.9851 18.0305 22.7983 18.0305 25.035Z" fill="#006AFF"/>
+                     </svg> 
+                  </div>   
+               </div>
+            </li>
+            <div class="opcoes">
+            <!--Opção 1 Sidebar-->
+            <li>
+               <a href="/Terapeuta/TerapeutaHome">
+                  <button class="btn-NClicado" on:click={() => selectedButton = 'inicio' } style="background-color: {selectedButton === 'inicio' ? '#006AFF' : 'transparent'}">
+                     <div class="txticon">
+                        <div class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: {selectedButton === 'inicio' ? 'white' : 'black'}">
+                              <g id="Menu/Dashboard">
+                              <path id="Vector" d="M21 14H14V21H21V14Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path id="Vector_2" d="M10 14H3V21H10V14Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path id="Vector_3" d="M21 3H14V10H21V3Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path id="Vector_4" d="M10 3H3V10H10V3Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                           </svg>
+                        </div>
+                     </div>
+                  </button>
+               </a>
+            </li>
+
+            <!--Opção 2 Sidebar-->
+            <li>
+               <a href="/Terapeuta/TerapeutaProntuarioPaciente1">
+                  <button class="btn-NClicado" on:click={() => selectedButton = 'prontuario' } style="background-color: {selectedButton === 'prontuario' ? '#006AFF' : 'transparent'}">
+                     <div class="txticon">
+                        <div class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: {selectedButton === 'prontuario' ? 'white' : 'black'}">
+                              <g clip-path="url(#clip0_130_1111)">
+                              <path d="M13.8374 2.8125H6.4874C6.00007 2.8125 5.53269 3.00609 5.18809 3.35069C4.8435 3.69529 4.6499 4.16266 4.6499 4.65V19.35C4.6499 19.8373 4.8435 20.3047 5.18809 20.6493C5.53269 20.9939 6.00007 21.1875 6.4874 21.1875H17.5124C17.9997 21.1875 18.4671 20.9939 18.8117 20.6493C19.1563 20.3047 19.3499 19.8373 19.3499 19.35V8.325L13.8374 2.8125Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M15.675 16.5938H8.32495" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M15.675 12.9187H8.32495" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.1625 9.24377H9.2437H8.32495" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M13.8374 2.8125V8.325H19.3499" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              </defs>
+                           </svg>
+                        </div> 
+                     </div>
+                  </button>
+               </a>
+            </li>
+
+            <!--Opção 3 Sidebar-->
+            <li>
+               <button class="btn-NClicado">
+                  <div class="txticon">
+                     <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g id="Menu/Bell">
+                           <path id="Vector" d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path id="Vector_2" d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           </g>
+                           </svg>
+                     </div>
+                  </div>
+               </button>
+         </li>
+
+         <!--Opção 4 Sidebar-->
+         <li>
+            <button class="btn-NClicado" on:click={() => selectedButton = 'configuracoes' }  style="background-color: {selectedButton === 'configuracoes' ? '#006AFF' : 'transparent'}">
+               <a href="/Terapeuta/Configuracoes">
+                  <div class="txticon">
+                     <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: {selectedButton === 'configuracoes' ? 'white' : 'black'}">
+                           <g id="Menu/Settings">
+                           <path id="Vector" d="M11.9999 14.3466C13.2959 14.3466 14.3465 13.296 14.3465 12C14.3465 10.704 13.2959 9.65344 11.9999 9.65344C10.7039 9.65344 9.65332 10.704 9.65332 12C9.65332 13.296 10.7039 14.3466 11.9999 14.3466Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path id="Vector_2" d="M18.0545 14.4545C17.9456 14.7013 17.9131 14.9751 17.9613 15.2405C18.0094 15.5059 18.1359 15.7508 18.3245 15.9436L18.3736 15.9927C18.5258 16.1447 18.6465 16.3252 18.7288 16.5238C18.8112 16.7225 18.8536 16.9354 18.8536 17.1505C18.8536 17.3655 18.8112 17.5784 18.7288 17.7771C18.6465 17.9757 18.5258 18.1562 18.3736 18.3082C18.2217 18.4603 18.0412 18.581 17.8425 18.6634C17.6439 18.7457 17.431 18.7881 17.2159 18.7881C17.0009 18.7881 16.7879 18.7457 16.5893 18.6634C16.3906 18.581 16.2102 18.4603 16.0582 18.3082L16.0091 18.2591C15.8163 18.0705 15.5714 17.9439 15.3059 17.8958C15.0405 17.8477 14.7668 17.8802 14.52 17.9891C14.278 18.0928 14.0716 18.265 13.9263 18.4845C13.7809 18.704 13.7029 18.9613 13.7018 19.2245V19.3636C13.7018 19.7976 13.5294 20.2138 13.2225 20.5207C12.9157 20.8276 12.4994 21 12.0655 21C11.6315 21 11.2152 20.8276 10.9084 20.5207C10.6015 20.2138 10.4291 19.7976 10.4291 19.3636V19.29C10.4228 19.0192 10.3351 18.7565 10.1775 18.5362C10.0199 18.3159 9.79969 18.1481 9.54545 18.0545C9.29868 17.9456 9.02493 17.9131 8.75952 17.9613C8.4941 18.0094 8.24919 18.1359 8.05636 18.3245L8.00727 18.3736C7.8553 18.5258 7.67483 18.6465 7.47617 18.7288C7.27752 18.8112 7.06459 18.8536 6.84955 18.8536C6.6345 18.8536 6.42157 18.8112 6.22292 18.7288C6.02426 18.6465 5.84379 18.5258 5.69182 18.3736C5.53967 18.2217 5.41898 18.0412 5.33663 17.8425C5.25428 17.6439 5.21189 17.431 5.21189 17.2159C5.21189 17.0009 5.25428 16.7879 5.33663 16.5893C5.41898 16.3906 5.53967 16.2102 5.69182 16.0582L5.74091 16.0091C5.92953 15.8163 6.05606 15.5714 6.10419 15.3059C6.15231 15.0405 6.11982 14.7668 6.01091 14.52C5.90719 14.278 5.73498 14.0716 5.51547 13.9263C5.29596 13.7809 5.03873 13.7029 4.77545 13.7018H4.63636C4.20237 13.7018 3.78616 13.5294 3.47928 13.2225C3.1724 12.9157 3 12.4994 3 12.0655C3 11.6315 3.1724 11.2152 3.47928 10.9084C3.78616 10.6015 4.20237 10.4291 4.63636 10.4291H4.71C4.98081 10.4228 5.24346 10.3351 5.46379 10.1775C5.68412 10.0199 5.85195 9.79969 5.94545 9.54545C6.05437 9.29868 6.08686 9.02493 6.03873 8.75952C5.99061 8.4941 5.86408 8.24919 5.67545 8.05636L5.62636 8.00727C5.47422 7.8553 5.35352 7.67483 5.27118 7.47617C5.18883 7.27752 5.14644 7.06459 5.14644 6.84955C5.14644 6.6345 5.18883 6.42157 5.27118 6.22292C5.35352 6.02426 5.47422 5.84379 5.62636 5.69182C5.77834 5.53967 5.95881 5.41898 6.15746 5.33663C6.35611 5.25428 6.56905 5.21189 6.78409 5.21189C6.99913 5.21189 7.21207 5.25428 7.41072 5.33663C7.60937 5.41898 7.78984 5.53967 7.94182 5.69182L7.99091 5.74091C8.18374 5.92953 8.42865 6.05606 8.69406 6.10419C8.95948 6.15231 9.23322 6.11982 9.48 6.01091H9.54545C9.78745 5.90719 9.99383 5.73498 10.1392 5.51547C10.2846 5.29596 10.3626 5.03873 10.3636 4.77545V4.63636C10.3636 4.20237 10.536 3.78616 10.8429 3.47928C11.1498 3.1724 11.566 3 12 3C12.434 3 12.8502 3.1724 13.1571 3.47928C13.464 3.78616 13.6364 4.20237 13.6364 4.63636V4.71C13.6374 4.97328 13.7154 5.23051 13.8608 5.45002C14.0062 5.66953 14.2126 5.84174 14.4545 5.94545C14.7013 6.05437 14.9751 6.08686 15.2405 6.03873C15.5059 5.99061 15.7508 5.86408 15.9436 5.67545L15.9927 5.62636C16.1447 5.47422 16.3252 5.35352 16.5238 5.27118C16.7225 5.18883 16.9354 5.14644 17.1505 5.14644C17.3655 5.14644 17.5784 5.18883 17.7771 5.27118C17.9757 5.35352 18.1562 5.47422 18.3082 5.62636C18.4603 5.77834 18.581 5.95881 18.6634 6.15746C18.7457 6.35611 18.7881 6.56905 18.7881 6.78409C18.7881 6.99913 18.7457 7.21207 18.6634 7.41072C18.581 7.60937 18.4603 7.78984 18.3082 7.94182L18.2591 7.99091C18.0705 8.18374 17.9439 8.42865 17.8958 8.69406C17.8477 8.95948 17.8802 9.23322 17.9891 9.48V9.54545C18.0928 9.78745 18.265 9.99383 18.4845 10.1392C18.704 10.2846 18.9613 10.3626 19.2245 10.3636H19.3636C19.7976 10.3636 20.2138 10.536 20.5207 10.8429C20.8276 11.1498 21 11.566 21 12C21 12.434 20.8276 12.8502 20.5207 13.1571C20.2138 13.464 19.7976 13.6364 19.3636 13.6364H19.29C19.0267 13.6374 18.7695 13.7154 18.55 13.8608C18.3305 14.0062 18.1583 14.2126 18.0545 14.4545V14.4545Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           </g>
+                        </svg>
+                     </div>
+                  </div>
+               </a>
+               </button>
+         </li>
+
+         <!--Opção 5 Sidebar-->
+         <li>
+            <button class="btn-NClicado">
+               <div class="txticon">
+                  <div class="icon">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Frame 40254">
+                        <path id="Vector" d="M11 18H13V16H11V18ZM12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C10.9391 6 9.92172 6.42143 9.17157 7.17157C8.42143 7.92172 8 8.93913 8 10H10C10 9.46957 10.2107 8.96086 10.5858 8.58579C10.9609 8.21071 11.4696 8 12 8C12.5304 8 13.0391 8.21071 13.4142 8.58579C13.7893 8.96086 14 9.46957 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 8.93913 15.5786 7.92172 14.8284 7.17157C14.0783 6.42143 13.0609 6 12 6Z" fill="black"/>
+                        </g>
+                        </svg>
+                  </div>
+               </div>
+            </button>
+         </li>
+         <!--Opção Perfil (Oculto)-->
+         <li>
+           <button class="btn-perfil">
+            <div class="btn-NClicado">
+               <div class="txticon">
+                  <div class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+                  </div>
+               </div>
+            </div>
+         </button> 
+         </li>
+
+      </div>
+      <!--Opção Sair-->
+      <li>
+         <a href="/Login">   
                <div class="btn-Sair">
                   <div class="txticon">
-                     <div class="icon" style="margin-top: 5%;">
+                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                            <path d="M8.33325 14.1666L12.4999 9.99998L8.33325 5.83331" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                            <path d="M12.5 10H2.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                            <path d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                            </svg>
-                     </div>  
-                     <div class="txt-Sair" style="font-size:18px; font-weight: 600;">
-                        <span class="txtclicado" style="color: black;">Sair</span>
-                     </div> 
+                     </div>
                   </div>
                </div>
-            </a>   
-   </div>   
+            </a>
+      </li>         
+   </ul>   
+      
 </aside>
-
 
 <style>
 
-.sidebar-button {
-    display: none;
-  }
-
 .sidebar{
-         position: relative;
-         background-color: white;
-         width: 240px;
-         height: 100vh;
-      }
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+ }
+   
 .opcoes{
+   display: flex;
+   flex-direction: column;
    box-sizing: border-box;
    margin-top: 25px;
    margin-left: 10%;
@@ -188,40 +323,17 @@
    display: none;
 }
 
-@media (max-width: 1000px) {
-    /* Oculta a barra lateral quando a largura da página é menor que 945px */
-    .sidebar {
-      display: none;
-    }
+.header-sidebar-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}  
 
-    /* Mostra o botão quando a largura da página é menor que 945px */
-    .sidebar-button {
-      display: block;
-    }
-  }
-
-@media (max-width: 1162px){
-   .btn-perfil{
-      display: block;
-   }
+.sidebar-icons{
+   display: none;
 }
-
-
-/*Estilo Botao Sair*/
-   .btn-Sair{
-      width: 192px;
-      display: flex;
-      flex-direction: row;
-      padding: 12px 46px;
-      align-items: center;
-      gap: 12px;
-      position: absolute;
-      bottom: 4%;
-      left: 10%;
-      border-radius: 8px;
-      background: rgba(0, 106, 255, 0.20);
-   }
-
 
 /*Estilo Imagem Sidebar*/
    .header-sidebar {
@@ -238,14 +350,14 @@
       margin-top: 20%;
    }
 
-   /*Estilo Opção Sidebar*/
+/*Estilo Opção Sidebar*/
    .btn-NClicado{
       width: 100%;
+      padding: 0px 12px 0px 12px;
       height: 48px;
-      display: flex;     
+      display: flex;
       align-items: center;
       border-radius: 4px;
-      background: white;
       margin-top: 8px;
    }
 
@@ -256,14 +368,87 @@
       color: black;
       
    }
+
+/*Estilo Botao Sair*/
+   .box-sair{
+      width: 100%;
+      display: flex;
+      padding: 24px;
+   }
+
+   .btn-Sair {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   padding: 12px;
+   gap: 12px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   background: rgba(0, 106, 255, 0.20);
+   margin-bottom: 30px;
+   } 
+
  /*Estilos Padrão*/
    .txticon{
       display: flex;
       flex-direction: row;
+      gap: 12px;
    }
 
-   .icon{
-      margin-left: 16px;
-      margin-right: 12px;
+   button:hover {
+      background-color: rgba(0, 0, 0, 0.039);
    }
+
+@media (max-width: 1000px) {
+      .sidebar {
+         display: none;
+      }
+   
+    .sidebar-icons {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       width:60px;
+       height: 100%;
+       border: red solid 1px;
+      }
+
+      .opcoes{
+         display: flex;
+         flex-direction: column;
+         margin-top: 25px;
+         margin-left: 10%;
+         margin-right: 10%;
+         border: blue solid 1px;
+      }
+
+      .btn-NClicado{
+        width: max-content;
+        padding: 0px 12px 0px 12px;
+        height: 48px;
+        display: flex;     
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-top: 8px;
+     }
+      
+    .btn-Sair{
+      flex-direction: row;
+      align-items: center;
+      width: fit-content;
+      padding: 12px;
+      gap: 12px;
+      border-radius: 8px;
+      background: rgba(0, 106, 255, 0.20);
+   }
+}
+
+@media (max-width: 1162px){
+   .btn-perfil{
+      display: block;
+   }
+}
+
 </style>

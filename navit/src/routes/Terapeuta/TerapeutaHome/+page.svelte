@@ -64,6 +64,8 @@
         position: relative;
         display: flex;
         height: 100vh;
+        margin-right: 10px;
+        
     }
     .estatisticas{
         height: 100vh;

@@ -28,10 +28,6 @@
 
 <style>
 
-.sidebar{
-    width: 100vh;
-}
-
 .caixa_centro{
     align-items: center;
 }
@@ -46,7 +42,4 @@
     margin-top: 17px;
 }
 
-.cardtempo{
-    /* margin-left: 295px; */
-}
 </style>
