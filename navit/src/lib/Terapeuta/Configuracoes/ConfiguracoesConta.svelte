@@ -1,5 +1,4 @@
 <script>
-    let focused = false;
 </script>
 
 <div class="configuracoes-conta-card">
