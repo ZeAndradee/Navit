@@ -20,9 +20,6 @@
         {#if selectedButton === 'configuracoes'}
             <ConfiguracoesConta/>
         {/if}
-        {#if selectedButton === 'notificacoes'}
-            
-        {/if}
     </div>    
     
 </div>
