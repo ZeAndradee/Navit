@@ -1,6 +1,6 @@
 <script>
     // import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte";
-    import SideBarMenuProntuario from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuProntuario.svelte";
+    import SideBarMenuProntuario from "$lib/SideBarMenu/SideBarMenu.svelte";
     import Headerpaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/headerPaciente/headerpaciente.svelte";
     import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaciente/infoPaciente.svelte";
     import Cardtemptela from "$lib/Terapeuta/Terapeuta-Prontuarios2/cardtempotela/cardtemptela.svelte";
