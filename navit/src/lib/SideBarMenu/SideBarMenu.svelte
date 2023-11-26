@@ -33,7 +33,7 @@
                            </svg>
                         </div>  
                         <div class="txtb">
-                           <span class="txtclicado" style="color: {selectedButton === 'inicio' ? 'white' : 'black'}">Início</span>
+                           <span class="txtclicado" style="color: {selectedButton === 'inicio' ? 'white' : 'black'}">Inícioo</span>
                         </div> 
                      </div>
                   </button>
