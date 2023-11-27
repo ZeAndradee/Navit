@@ -1,6 +1,7 @@
 <script>
     import ConfiguracoesConta from "$lib/Terapeuta/Configuracoes/ConfiguracoesConta.svelte";
     import Notificacoes from "$lib/Terapeuta/Configuracoes/Notificacoes.svelte";
+    import Duvidas from "$lib/Terapeuta/Configuracoes/DuvidasConta.svelte";
 
     let selectedButton = 'configuracoes';
 </script>
@@ -24,6 +25,9 @@
         {/if}
         {#if selectedButton === 'notificacoes'}
             <Notificacoes/>
+        {/if}
+        {#if selectedButton === 'duvidas'}
+            <Duvidas/>
         {/if}
     </div>    
     
