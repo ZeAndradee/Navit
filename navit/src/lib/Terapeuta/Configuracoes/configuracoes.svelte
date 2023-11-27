@@ -37,12 +37,11 @@
     .card-config{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 100%;
         border-radius: 10px;
         background-color: white;
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 50px;
     }
 
     .header-row{
