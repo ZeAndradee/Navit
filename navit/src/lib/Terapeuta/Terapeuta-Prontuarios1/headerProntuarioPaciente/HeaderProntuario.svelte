@@ -1,3 +1,5 @@
+
+
 <componente1>
     <div class="Titulocentral">
         <div>
@@ -62,13 +64,12 @@
 .subtitulo2,
 .subtitulo3,
 .subtitulo4 {
-    color: #333; 
+    color: var(--Black, #151515);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 0;
 }
 
 .Texto,
@@ -81,6 +82,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0;
 }
 </style>

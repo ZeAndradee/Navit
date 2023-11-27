@@ -1,12 +1,17 @@
 <script>
-    import Header from "$lib/Terapeuta/TerapeutaHome/Header/Header.svelte"
-    import SideBarMenuInicio from "$lib/Terapeuta/TerapeutaHome/SideBarMenu/SideBarMenuInicio.svelte"
-    import Configuracoes from "$lib/Terapeuta/Configuracoes/Configuracoes.svelte"
+    import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
+    import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte";
+    import Configuracoes from "$lib/Terapeuta/Configuracoes/configuracoes.svelte";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+    document.title = 'Configurações';
+  });
 </script>
 
 <div class="row">
     <div class="sidebar">
-        <SideBarMenuInicio />
+        <SideBarMenuInicio selectedButton="configuracoes" />
     </div>
 <div class="column">
         <div class="header">
@@ -22,7 +27,7 @@
 </div>
 
 <style>
-    
+    /* Inicio Elementos Padrão*/
     .row{
         display: flex;
         flex-direction: row;
@@ -34,13 +39,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
-    .row-inferior{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row; 
-    }    
+    }  
 
     .sidebar{
         position: relative;
@@ -61,6 +60,7 @@
         width: 100%;
         margin-left: auto;
     }
+/* Fim Elementos Padrão*/
 
     .configuracoes{
         width: 100%;

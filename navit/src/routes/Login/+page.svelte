@@ -1,5 +1,10 @@
 <script>
     import FormLogin from "$lib/Login/FormLogin.svelte";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+    document.title = 'YouMe - Entrar';
+  });
 </script>
 
 <div class="row"> 

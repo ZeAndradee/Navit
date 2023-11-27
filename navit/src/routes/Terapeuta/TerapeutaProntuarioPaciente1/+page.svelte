@@ -1,13 +1,35 @@
 <script>
+    import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte"
     import HeaderProntuario from "$lib/Terapeuta/Terapeuta-Prontuarios1/headerProntuarioPaciente/HeaderProntuario.svelte";
-    import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios1/Infopaciente/Infopaciente.svelte";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+    document.title = 'Prontuários Pacientes';
+  });
 </script>
-<div>
-    <HeaderProntuario/>   
+
+<div class="row">
+    <div class="sidebar">
+        <SideBarMenuInicio selectedButton="prontuario" />
+    </div>
+
+    <div class="prontuarios">
+        <HeaderProntuario />
+    </div>
 </div>
-<div>
-    <InfoPaciente/> 
-</div>
 
+<style>
+    .row{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
 
-
+    .sidebar{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    margin-right: 10px;
+        
+    }    
+</style>
