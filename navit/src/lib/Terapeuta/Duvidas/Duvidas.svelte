@@ -1,3 +1,14 @@
+<script>
+// @ts-nocheck
+
+let cards = [
+        { expanded: false, textElement: null },
+        { expanded: false, textElement: null },
+        { expanded: false, textElement: null },
+        { expanded: false, textElement: null },
+    ];
+</script>
+
 <div class="card-duvidas">
     <div class="card-duvidas-interno">
         <div class="column">
@@ -12,7 +23,73 @@
                     </button>
                 </form>
             </div>
-            <div></div>
+            <div class="inner-row">
+                <div class="inner-column">
+                    <!-- Opcao 1 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                          <span>Como posso mudar a minha senha?</span>
+                          <button class="button-question" on:click={() => {
+                            cards[0].expanded = !cards[0].expanded;
+                            cards[0].textElement.style.display = cards[0].expanded ? 'block' : 'none';
+                          }}>
+                            <span>+</span>
+                          </button>
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[0].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+
+                    <!-- Opcao 2 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                          <span>Como posso mudar a minha senha?</span>
+                          <button class="button-question" on:click={() => {
+                            cards[1].expanded = !cards[1].expanded;
+                            cards[1].textElement.style.display = cards[1].expanded ? 'block' : 'none';
+                          }}>
+                            <span>+</span>
+                          </button>
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[1].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-column">
+                    <!-- Opcao 3 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                          <span>Como posso mudar a minha senha?</span>
+                          <button class="button-question" on:click={() => {
+                            cards[2].expanded = !cards[2].expanded;
+                            cards[2].textElement.style.display = cards[2].expanded ? 'block' : 'none';
+                          }}>
+                            <span>+</span>
+                          </button>
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[2].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+                    <!-- Opcao 4 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                          <span>Como posso mudar a minha senha?</span>
+                          <button class="button-question" on:click={() => {
+                            cards[3].expanded = !cards[3].expanded;
+                            cards[3].textElement.style.display = cards[3].expanded ? 'block' : 'none';
+                          }}>
+                            <span>+</span>
+                          </button>
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[3].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -31,9 +108,11 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        justify-content: center;
     }
     .card-duvidas-interno{
         display: flex;
+        padding: 0px 20px 0px 20px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -41,6 +120,7 @@
         height: 100%;
         border-radius: 10px;
         background-color: white;
+        border: red 1px solid;
     }
     .header-txt{
         display: flex;
@@ -52,7 +132,6 @@
         text-align: center;
         color: #006AFF;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         letter-spacing: 3px;
     }
@@ -60,8 +139,75 @@
         margin-top: 10px;
         text-align: center;
         font-size: 40px;
-        font-style: normal;
         font-weight: 700;
+    }
+
+    .inner-row{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 43px;
+        gap: 20px;
+    }
+
+    .inner-column{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .question-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 585px;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #E0E4EC;
+        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+    }
+
+    .question-card span{
+        color: #02347b;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .button-question{
+        display: flex;
+        height: 40px;
+        align-items: center;
+        margin-left: auto;
+        
+        padding: 8px;
+        background-color: #006AFF;
+        border-radius: 8px;
+    }
+    .button-question span{
+        color: white;
+        font-size: 30px;
+    }
+
+    .title-button{
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .txt-extra{
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: row;
+    }
+    .txt-extra span{
+        width: 100%;
+        word-wrap: break-word;
+        color: #656575;
+        font-size: 14px;
+        font-weight: 400;
     }
 
     /* SearchBar */
