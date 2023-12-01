@@ -19,10 +19,24 @@
 </div>
 
 <div class="sidebar">
-    <SideBarMenuInicio />
+    <SideBarMenuInicio selectedButton="prontuario" />
+</div>
+<div class="sidebarr">
+    <SideBarMenuInicio selectedButton="prontuario" />
 </div>
 
 
 <style>
-
+    .sidebar{
+        display: flex;
+        position: fixed;
+        height: 100vh;
+        margin-right: 10px;
+        
+    }
+    .sidebarr{ /*Apenas para dar o espacamento*/
+        display: flex;
+        height: 100vh;
+        margin-right: 10px;
+    }
 </style>

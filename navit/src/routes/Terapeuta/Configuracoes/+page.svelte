@@ -13,15 +13,18 @@
     <div class="sidebar">
         <SideBarMenuInicio selectedButton="configuracoes" />
     </div>
-<div class="column">
-        <div class="header">
-            <div class="search-case">
-                <Header />
+    <div class="sidebarr">
+        <SideBarMenuInicio selectedButton="configuracoes" />
+    </div>
+    <div class="column">
+            <div class="header">
+                <div class="search-case">
+                    <Header />
+                </div>
             </div>
-        </div>
-        <div class="configuracoes">
-            <Configuracoes />
-        </div>
+            <div class="configuracoes">
+                <Configuracoes />
+            </div>
     </div>
         
 </div>
@@ -42,9 +45,14 @@
     }  
 
     .sidebar{
-        position: relative;
+        display: flex;
+        position: fixed;
+        height: 100vh;
+    }
+    .sidebarr{ /*Apenas para dar o espacamento*/
         display: flex;
         height: 100vh;
+        margin-right: 10px;
     }
 
     .header{

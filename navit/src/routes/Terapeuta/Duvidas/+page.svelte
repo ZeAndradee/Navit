@@ -13,6 +13,9 @@
     <div class="sidebar">
         <SideBarMenuInicio selectedButton="duvidas" />
     </div>
+    <div class="sidebarr">
+        <SideBarMenuInicio selectedButton="duvidas" />
+    </div>
 <div class="column">
         <div class="header">
             <div class="search-case">
@@ -27,6 +30,15 @@
 </div>
 
 <style>
+
+    .duvidas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+
     /* Inicio Elementos Padrão*/
     .row{
         display: flex;
@@ -42,9 +54,16 @@
     }  
 
     .sidebar{
-        position: relative;
+        position: fixed;
         display: flex;
         height: 100vh;
+    }
+
+    .sidebarr{ /*Apenas para dar o espacamento*/
+        display: flex;
+        height: 100vh;
+        margin-right: 10px;
+        
     }
 
     .header{

@@ -19,7 +19,6 @@
     flex-direction: column;
     height: 100vh;
     width: 344px;
-    background:  #F8F7F1;
    
   }
 

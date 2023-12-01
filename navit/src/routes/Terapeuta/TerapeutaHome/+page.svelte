@@ -16,6 +16,9 @@
         <div class="sidebar">
             <SideBarMenuInicio selectedButton="inicio" />
         </div>
+        <div class="sidebarr">
+            <SideBarMenuInicio selectedButton="inicio" />
+        </div>
 
         <div class="estatisticas">
             <EstatisticasDiarias />
@@ -66,16 +69,22 @@
     }    
 
     .sidebar{
-        position: relative;
+        display: flex;
+        position: fixed;
+        height: 100vh;
+        margin-right: 10px;
+        
+    }
+
+    .sidebarr{ /*Apenas para dar o espacamento*/
         display: flex;
         height: 100vh;
         margin-right: 10px;
         
     }
     .estatisticas{
-        height: 100vh;
-        position: relative;
         display: flex;
+        height: 100vh;
     }
 
     .lista-pacientes{
