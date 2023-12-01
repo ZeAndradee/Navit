@@ -12,6 +12,9 @@
     <div class="sidebar">
         <SideBarMenuInicio selectedButton="prontuario" />
     </div>
+    <div class="sidebarr">
+        <SideBarMenuInicio selectedButton="prontuario" />
+    </div>
 
     <div class="prontuarios">
         <HeaderProntuario />
@@ -26,10 +29,17 @@
     }
 
     .sidebar{
-    position: relative;
+    position: fixed;
     display: flex;
     height: 100vh;
     margin-right: 10px;
         
-    }    
+    }   
+    
+    .sidebarr{ /*Apenas para dar o espacamento*/
+        display: flex;
+        height: 100vh;
+        margin-right: 10px;
+        
+    }
 </style>
