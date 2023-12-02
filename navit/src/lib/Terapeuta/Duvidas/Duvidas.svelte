@@ -1,12 +1,28 @@
 <script>
 // @ts-nocheck
+        
+        let selectedButtons = [];
+        let cards = [
+            { expanded: false,  textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+            { expanded: false, textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+            { expanded: false, textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+            { expanded: false, textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+        ];
 
-let cards = [
-        { expanded: false, textElement: null },
-        { expanded: false, textElement: null },
-        { expanded: false, textElement: null },
-        { expanded: false, textElement: null },
-    ];
+        function handleClick(index) {
+            let buttonIndex = selectedButtons.indexOf('btn-' + (index + 1));
+            if (buttonIndex === -1) {
+                selectedButtons.push('btn-' + (index + 1));
+                cards[index].expanded = true;
+                cards[index].textElement.style.display = 'block';
+                cards[index].btnColor = '#006AFF';
+            } else {
+                selectedButtons.splice(buttonIndex, 1);
+                cards[index].expanded = false;
+                cards[index].textElement.style.display = 'none';
+                cards[index].btnColor = '#C0C0C0';
+            }
+        }
 </script>
 
 <div class="card-duvidas">
@@ -28,13 +44,10 @@ let cards = [
                     <!-- Opcao 1 -->
                     <div class="question-card">
                         <div class="title-button">
-                          <span>Como posso mudar a minha senha?</span>
-                          <div class="wrapper">
-                            <button class="button-question" on:click={() => {
-                                cards[0].expanded = !cards[0].expanded;
-                                cards[0].textElement.style.display = cards[0].expanded ? 'block' : 'none';
-                            }}>
-                                <span>+</span>
+                        <span>Como posso mudar a minha senha?</span>
+                        <div class="wrapper">
+                            <button class="button-question" on:click={() => handleClick(0)} style="background-color: {selectedButtons.includes('btn-1') ? '#006AFF' : '#C0C0C0'}">                                
+                                <span>{selectedButtons.includes('btn-1') ? '-' : '+'}</span>
                             </button>
                         </div>
                         </div>
@@ -43,16 +56,14 @@ let cards = [
                         </div>
                     </div>
 
+
                     <!-- Opcao 2 -->
                     <div class="question-card">
                         <div class="title-button">
-                          <span>Como posso mudar a minha senha?</span>
-                          <div class="wrapper">
-                            <button class="button-question" on:click={() => {
-                                cards[1].expanded = !cards[1].expanded;
-                                cards[1].textElement.style.display = cards[1].expanded ? 'block' : 'none';
-                            }}>
-                                <span>+</span>
+                        <span>Como posso mudar a minha senha?</span>
+                        <div class="wrapper">
+                            <button class="button-question" on:click={() => handleClick(1)} style="background-color: {selectedButtons.includes('btn-2') ? '#006AFF' : '#C0C0C0'}">                                
+                                <span>{selectedButtons.includes('btn-2') ? '-' : '+'}</span>
                             </button>
                         </div>
                         </div>
@@ -65,15 +76,12 @@ let cards = [
                     <!-- Opcao 3 -->
                     <div class="question-card">
                         <div class="title-button">
-                          <span>Como posso mudar a minha senha?</span>
-                            <div class="wrapper">
-                                <button class="button-question" on:click={() => {
-                                    cards[2].expanded = !cards[2].expanded;
-                                    cards[2].textElement.style.display = cards[2].expanded ? 'block' : 'none';
-                                }}>
-                                    <span>+</span>
-                                </button>
-                            </div>   
+                        <span>Como posso mudar a minha senha?</span>
+                        <div class="wrapper">
+                            <button class="button-question" on:click={() => handleClick(2)} style="background-color: {selectedButtons.includes('btn-3') ? '#006AFF' : '#C0C0C0'}">                                
+                                <span>{selectedButtons.includes('btn-3') ? '-' : '+'}</span>
+                            </button>
+                        </div>
                         </div>
                         <div class="txt-extra">
                             <span bind:this={cards[2].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
@@ -84,11 +92,8 @@ let cards = [
                         <div class="title-button">
                           <span>Como posso mudar a minha senha?</span>
                             <div class="wrapper">
-                                <button class="button-question" on:click={() => {
-                                    cards[3].expanded = !cards[3].expanded;
-                                    cards[3].textElement.style.display = cards[3].expanded ? 'block' : 'none';
-                                }}>
-                                    <span>+</span>
+                                <button class="button-question" on:click={() => handleClick(3)} style="background-color: {selectedButtons.includes('btn-4') ? '#006AFF' : '#C0C0C0'}">
+                                    <span>{selectedButtons.includes('btn-4') ? '-' : '+'}</span>
                                 </button>
                             </div>    
                         </div>
@@ -170,11 +175,10 @@ let cards = [
         flex-direction: column;
         width: 100%;
         max-width: 585px;
-        height: fit-content;
         padding: 10px;
         border-radius: 8px;
         border: 1px solid #E0E4EC;
-        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06); 
     }
 
     .question-card span{
@@ -189,6 +193,8 @@ let cards = [
     .button-question{
         display: flex;
         height: 40px;
+        width: 40px;
+        justify-content: center;
         align-items: center;
         padding: 8px;
         background-color: #006AFF;
