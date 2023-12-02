@@ -1,3 +1,30 @@
+<script>
+// @ts-nocheck
+        
+        let selectedButtons = [];
+        let cards = [
+            { expanded: false,  textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+            { expanded: false, textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+            { expanded: false, textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+            { expanded: false, textElement: null, bgColor: '#C0C0C0', btnColor: '#006AFF' },
+        ];
+
+        function handleClick(index) {
+            let buttonIndex = selectedButtons.indexOf('btn-' + (index + 1));
+            if (buttonIndex === -1) {
+                selectedButtons.push('btn-' + (index + 1));
+                cards[index].expanded = true;
+                cards[index].textElement.style.display = 'block';
+                cards[index].btnColor = '#006AFF';
+            } else {
+                selectedButtons.splice(buttonIndex, 1);
+                cards[index].expanded = false;
+                cards[index].textElement.style.display = 'none';
+                cards[index].btnColor = '#C0C0C0';
+            }
+        }
+</script>
+
 <div class="card-duvidas">
     <div class="card-duvidas-interno">
         <div class="column">
@@ -12,7 +39,70 @@
                     </button>
                 </form>
             </div>
-            <div></div>
+            <div class="inner-row">
+                <div class="inner-column">
+                    <!-- Opcao 1 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                        <span>Como posso mudar a minha senha?</span>
+                        <div class="wrapper">
+                            <button class="button-question" on:click={() => handleClick(0)} style="background-color: {selectedButtons.includes('btn-1') ? '#006AFF' : '#C0C0C0'}">                                
+                                <span>{selectedButtons.includes('btn-1') ? '-' : '+'}</span>
+                            </button>
+                        </div>
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[0].textElement}> Ut enim ad midddddd ddddddddddnim veniam quis nostsdsdsdsd sdsdsdsdsdsdsdsdsdsdsdsdsdrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Opcao 2 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                        <span>Como posso mudar a minha senha?</span>
+                        <div class="wrapper">
+                            <button class="button-question" on:click={() => handleClick(1)} style="background-color: {selectedButtons.includes('btn-2') ? '#006AFF' : '#C0C0C0'}">                                
+                                <span>{selectedButtons.includes('btn-2') ? '-' : '+'}</span>
+                            </button>
+                        </div>
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[1].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-column">
+                    <!-- Opcao 3 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                        <span>Como posso mudar a minha senha?</span>
+                        <div class="wrapper">
+                            <button class="button-question" on:click={() => handleClick(2)} style="background-color: {selectedButtons.includes('btn-3') ? '#006AFF' : '#C0C0C0'}">                                
+                                <span>{selectedButtons.includes('btn-3') ? '-' : '+'}</span>
+                            </button>
+                        </div>
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[2].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+                    <!-- Opcao 4 -->
+                    <div class="question-card">
+                        <div class="title-button">
+                          <span>Como posso mudar a minha senha?</span>
+                            <div class="wrapper">
+                                <button class="button-question" on:click={() => handleClick(3)} style="background-color: {selectedButtons.includes('btn-4') ? '#006AFF' : '#C0C0C0'}">
+                                    <span>{selectedButtons.includes('btn-4') ? '-' : '+'}</span>
+                                </button>
+                            </div>    
+                        </div>
+                        <div class="txt-extra">
+                            <span bind:this={cards[3].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -31,9 +121,11 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        justify-content: center;
     }
     .card-duvidas-interno{
         display: flex;
+        padding: 0px 20px 0px 20px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -41,6 +133,7 @@
         height: 100%;
         border-radius: 10px;
         background-color: white;
+        border: red 1px solid;
     }
     .header-txt{
         display: flex;
@@ -52,7 +145,6 @@
         text-align: center;
         color: #006AFF;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         letter-spacing: 3px;
     }
@@ -60,8 +152,77 @@
         margin-top: 10px;
         text-align: center;
         font-size: 40px;
-        font-style: normal;
         font-weight: 700;
+    }
+
+    .inner-row{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 43px;
+        gap: 20px;
+    }
+
+    .inner-column{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .question-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 585px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #E0E4EC;
+        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06); 
+    }
+
+    .question-card span{
+        color: #02347b;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .wrapper {
+        padding-left: 15px;
+        margin-left: auto;
+    }
+    .button-question{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        background-color: #006AFF;
+        border-radius: 8px;
+    }
+    .button-question span{
+        color: white;
+        font-size: 30px;
+    }
+
+    .title-button{
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .txt-extra{
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: row;
+    }
+    .txt-extra span{
+        width: 100%;
+        word-wrap: break-word;
+        color: #656575;
+        font-size: 14px;
+        font-weight: 400;
     }
 
     /* SearchBar */
@@ -90,4 +251,11 @@
     }
     
     .search-bar input:focus { outline: none; }
+
+    @media (max-width: 640px){
+        .inner-row{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 </style>
