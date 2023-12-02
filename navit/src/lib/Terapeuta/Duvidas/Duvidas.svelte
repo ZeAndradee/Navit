@@ -133,7 +133,6 @@
         height: 100%;
         border-radius: 10px;
         background-color: white;
-        border: red 1px solid;
     }
     .header-txt{
         display: flex;

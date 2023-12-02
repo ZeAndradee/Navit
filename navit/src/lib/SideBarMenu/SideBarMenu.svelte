@@ -1,6 +1,6 @@
 <script>
    export let selectedButton = '';
- </script>
+</script>
 
 <aside>
    <div class="sidebar">
