@@ -29,15 +29,17 @@ let cards = [
                     <div class="question-card">
                         <div class="title-button">
                           <span>Como posso mudar a minha senha?</span>
-                          <button class="button-question" on:click={() => {
-                            cards[0].expanded = !cards[0].expanded;
-                            cards[0].textElement.style.display = cards[0].expanded ? 'block' : 'none';
-                          }}>
-                            <span>+</span>
-                          </button>
+                          <div class="wrapper">
+                            <button class="button-question" on:click={() => {
+                                cards[0].expanded = !cards[0].expanded;
+                                cards[0].textElement.style.display = cards[0].expanded ? 'block' : 'none';
+                            }}>
+                                <span>+</span>
+                            </button>
+                        </div>
                         </div>
                         <div class="txt-extra">
-                            <span bind:this={cards[0].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
+                            <span bind:this={cards[0].textElement}> Ut enim ad midddddd ddddddddddnim veniam quis nostsdsdsdsd sdsdsdsdsdsdsdsdsdsdsdsdsdrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
                         </div>
                     </div>
 
@@ -45,12 +47,14 @@ let cards = [
                     <div class="question-card">
                         <div class="title-button">
                           <span>Como posso mudar a minha senha?</span>
-                          <button class="button-question" on:click={() => {
-                            cards[1].expanded = !cards[1].expanded;
-                            cards[1].textElement.style.display = cards[1].expanded ? 'block' : 'none';
-                          }}>
-                            <span>+</span>
-                          </button>
+                          <div class="wrapper">
+                            <button class="button-question" on:click={() => {
+                                cards[1].expanded = !cards[1].expanded;
+                                cards[1].textElement.style.display = cards[1].expanded ? 'block' : 'none';
+                            }}>
+                                <span>+</span>
+                            </button>
+                        </div>
                         </div>
                         <div class="txt-extra">
                             <span bind:this={cards[1].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
@@ -62,12 +66,14 @@ let cards = [
                     <div class="question-card">
                         <div class="title-button">
                           <span>Como posso mudar a minha senha?</span>
-                          <button class="button-question" on:click={() => {
-                            cards[2].expanded = !cards[2].expanded;
-                            cards[2].textElement.style.display = cards[2].expanded ? 'block' : 'none';
-                          }}>
-                            <span>+</span>
-                          </button>
+                            <div class="wrapper">
+                                <button class="button-question" on:click={() => {
+                                    cards[2].expanded = !cards[2].expanded;
+                                    cards[2].textElement.style.display = cards[2].expanded ? 'block' : 'none';
+                                }}>
+                                    <span>+</span>
+                                </button>
+                            </div>   
                         </div>
                         <div class="txt-extra">
                             <span bind:this={cards[2].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
@@ -77,12 +83,14 @@ let cards = [
                     <div class="question-card">
                         <div class="title-button">
                           <span>Como posso mudar a minha senha?</span>
-                          <button class="button-question" on:click={() => {
-                            cards[3].expanded = !cards[3].expanded;
-                            cards[3].textElement.style.display = cards[3].expanded ? 'block' : 'none';
-                          }}>
-                            <span>+</span>
-                          </button>
+                            <div class="wrapper">
+                                <button class="button-question" on:click={() => {
+                                    cards[3].expanded = !cards[3].expanded;
+                                    cards[3].textElement.style.display = cards[3].expanded ? 'block' : 'none';
+                                }}>
+                                    <span>+</span>
+                                </button>
+                            </div>    
                         </div>
                         <div class="txt-extra">
                             <span bind:this={cards[3].textElement}> Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</span>
@@ -174,13 +182,14 @@ let cards = [
         font-size: 18px;
         font-weight: 500;
     }
-
+    .wrapper {
+        padding-left: 15px;
+        margin-left: auto;
+    }
     .button-question{
         display: flex;
         height: 40px;
         align-items: center;
-        margin-left: auto;
-        
         padding: 8px;
         background-color: #006AFF;
         border-radius: 8px;
@@ -236,4 +245,11 @@ let cards = [
     }
     
     .search-bar input:focus { outline: none; }
+
+    @media (max-width: 640px){
+        .inner-row{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 </style>
