@@ -1,7 +1,8 @@
 <script>
+    import { onMount } from "svelte";
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte";
-    import { onMount } from "svelte";
+    import HeaderTerapeuta from "$lib/Terapeuta/Prontuarios/HeaderTerapeuta/HeaderTerapeuta.svelte";
 
     onMount(() => {
     document.title = 'Prontuários - YouMe';
@@ -20,12 +21,27 @@
                 <div class="search-case">
                     <Header />
                 </div>
+            </div>
+            <div class="prontuarios-column">
+                <div class="header-terapeuta">
+                    <HeaderTerapeuta />
+                </div>
             </div>    
     </div>
 
 </div>
 
 <style>
+
+    .prontuarios-column{
+        display: flex;
+        flex-direction: column;
+        margin-top: 28px;
+        margin-left: 20px;
+        margin-right: 50px;
+        height: 100%;
+    }
+
     /* Inicio Elementos Padrão */
     .row{
         display: flex;
