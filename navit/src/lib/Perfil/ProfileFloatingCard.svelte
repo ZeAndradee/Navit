@@ -1,6 +1,5 @@
 <script>
 // @ts-nocheck
-    
     import { goto } from '$app/navigation'; 
     import profilePic from "$lib/assets/Header/profilepic.png";
     let nomeCliente = "Fábio Peixoto";
@@ -19,6 +18,8 @@
         goto('/Terapeuta/Duvidas');
     }
 </script>
+
+
 <div class="perfil-card">
     <div class="account-header">
         <div class="profile-pic"> 
@@ -44,7 +45,7 @@
                     </defs>
                     </svg>
                 </div>
-                <div><span>Acessar Perfil</span></div>
+                <div><span>Editar Perfil</span></div>
             </button>
             <button class="menu-item" on:click={navigateToLogin}>
                 <div><svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +105,6 @@
         </li>
     </ul>
 </div>
-
 <style>
     .perfil-card{
         display: flex;
