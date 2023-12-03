@@ -7,14 +7,16 @@
     function toggleMenu() {
         showMenu = !showMenu;
     }
+
 </script>
 
 <div class="header">
     <SearchCase />
     <button class="pfp" on:click={toggleMenu}><PFP /></button>
+    
     {#if showMenu}
     <div class="profile-menu">
-        <ProfileFloatingCard />
+        <ProfileFloatingCard/>
     </div>
     {/if}
 </div>
