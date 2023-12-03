@@ -6,7 +6,7 @@
       goto('/Terapeuta/Inicio');
    }
    function navigateToProntuarios() {
-      goto('/Terapeuta/TerapeutaProntuarioPaciente1');
+      goto('/Terapeuta/Prontuarios');
    }
    function navigateToConfig() {
       goto('/Terapeuta/Configuracoes');

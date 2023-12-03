@@ -1,6 +1,5 @@
 <script>
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte"
-    import HeaderProntuario from "$lib/Terapeuta/Terapeuta-Prontuarios1/headerProntuarioPaciente/HeaderProntuario.svelte";
     import { onMount } from "svelte";
 
     onMount(() => {
@@ -14,10 +13,6 @@
     </div>
     <div class="sidebarr">
         <SideBarMenuInicio selectedButton="prontuario" />
-    </div>
-
-    <div class="prontuarios">
-        <HeaderProntuario />
     </div>
 </div>
 
