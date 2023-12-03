@@ -5,7 +5,7 @@
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte";
     import Card1 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card1.svelte";
     import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
-    
+    import Card3slegenda from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3slegenda.svelte";
     import { onMount } from "svelte";
     
 
@@ -44,7 +44,6 @@
                 </div>
                 <div class="card3">
                     <Card3slegenda/>
-
                 </div>
             </div>
             <div class="listaprontuario">
