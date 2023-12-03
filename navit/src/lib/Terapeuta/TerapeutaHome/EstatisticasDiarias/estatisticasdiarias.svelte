@@ -1,3 +1,28 @@
+<script>
+  // @ts-nocheck
+  import Card1 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card1.svelte";
+  import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
+  import Card3 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3slegenda.svelte";
+
+
+  // Data e hora estatisticas diarias
+  let dataAtual = new Date();
+  let opcoesData = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+  let opcoesHora = { hour: '2-digit', minute: '2-digit' };
+  let dataFormatada = dataAtual.toLocaleDateString('pt-BR', opcoesData);
+  let horaFormatada = dataAtual.toLocaleTimeString('pt-BR', opcoesHora);
+
+  function primeiraLetraMaiuscula(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  let diaDaSemana = primeiraLetraMaiuscula(dataFormatada.split(',')[0]);
+  diaDaSemana = diaDaSemana.replace('.', ''); // Remove o ponto
+  let restoDaData = dataFormatada.split(',')[1];
+  dataFormatada = `${diaDaSemana},${restoDaData} ${horaFormatada}`;
+</script>
+
+
 <div class="background-div"> 
   <div class="estatisticasDiarias">
     <div class="div-txt">
@@ -44,28 +69,4 @@
   }
   
 </style>
-
-<script>
-  // @ts-nocheck
-  import Card1 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card1.svelte";
-  import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
-  import Card3 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3.svelte";
-
-
-  // Data e hora estatisticas diarias
-  let dataAtual = new Date();
-  let opcoesData = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-  let opcoesHora = { hour: '2-digit', minute: '2-digit' };
-  let dataFormatada = dataAtual.toLocaleDateString('pt-BR', opcoesData);
-  let horaFormatada = dataAtual.toLocaleTimeString('pt-BR', opcoesHora);
-
-  function primeiraLetraMaiuscula(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
-  let diaDaSemana = primeiraLetraMaiuscula(dataFormatada.split(',')[0]);
-  diaDaSemana = diaDaSemana.replace('.', ''); // Remove o ponto
-  let restoDaData = dataFormatada.split(',')[1];
-  dataFormatada = `${diaDaSemana},${restoDaData} ${horaFormatada}`;
-</script>
 
