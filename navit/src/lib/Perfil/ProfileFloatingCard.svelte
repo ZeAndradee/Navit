@@ -5,9 +5,9 @@
     let nomeCliente = "Fábio Peixoto";
     let categoriaCliente = "Terapeuta";
 
-    function navigateToProfile() {
-        goto('/Terapeuta/Perfil');
-    }
+    // function navigateToProfile() {
+    //     goto('/Terapeuta/Perfil');
+    // }
     function navigateToLogin() {
         goto('/Login');
     }
@@ -32,7 +32,7 @@
     </div>
     <ul>
         <li class="divider-item">
-            <button class="menu-item" on:click={navigateToProfile}>
+            <button class="menu-item" on:click={navigateToConfig}>
                 <div><svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1199_1308)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6668 8.28071C14.6668 9.25317 14.2805 10.1858 13.5929 10.8734C12.9053 11.5611 11.9726 11.9474 11.0002 11.9474C10.0277 11.9474 9.09507 11.5611 8.40744 10.8734C7.7198 10.1858 7.3335 9.25317 7.3335 8.28071C7.3335 7.30825 7.7198 6.37562 8.40744 5.68799C9.09507 5.00035 10.0277 4.61404 11.0002 4.61404C11.9726 4.61404 12.9053 5.00035 13.5929 5.68799C14.2805 6.37562 14.6668 7.30825 14.6668 8.28071ZM12.8335 8.28071C12.8335 8.76694 12.6403 9.23326 12.2965 9.57707C11.9527 9.92089 11.4864 10.114 11.0002 10.114C10.5139 10.114 10.0476 9.92089 9.7038 9.57707C9.35998 9.23326 9.16683 8.76694 9.16683 8.28071C9.16683 7.79448 9.35998 7.32816 9.7038 6.98435C10.0476 6.64053 10.5139 6.44738 11.0002 6.44738C11.4864 6.44738 11.9527 6.64053 12.2965 6.98435C12.6403 7.32816 12.8335 7.79448 12.8335 8.28071Z" fill="black"/>

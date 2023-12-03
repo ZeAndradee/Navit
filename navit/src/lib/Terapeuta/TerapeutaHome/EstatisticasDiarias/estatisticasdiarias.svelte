@@ -19,7 +19,6 @@
     flex-direction: column;
     height: 100vh;
     width: 344px;
-   
   }
 
   .div-txt{
@@ -41,6 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
   }
   
 </style>
