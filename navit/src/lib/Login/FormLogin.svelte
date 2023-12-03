@@ -14,7 +14,7 @@
                 <button style="color: #006AFF; font-weight:600; margin-left:auto">Esqueceu a senha?</button>
             </div>
             <input type="password" id="password" name="password" placeholder="Digite sua senha">
-            <a href="/Terapeuta/TerapeutaHome">
+            <a href="/Terapeuta/Inicio">
                 <button class="btn-entrar">Entrar</button>
             </a>
         </div>  
