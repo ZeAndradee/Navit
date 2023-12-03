@@ -2,7 +2,7 @@
   // @ts-nocheck
   import Card1 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card1.svelte";
   import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
-  import Card3 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3slegenda.svelte";
+  import Card3 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3.svelte";
 
 
   // Data e hora estatisticas diarias
