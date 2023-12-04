@@ -3,8 +3,9 @@
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte";
     import HeaderTerapeuta from "$lib/Terapeuta/Prontuarios/HeaderTerapeuta/HeaderTerapeuta.svelte";
-    import PacienteProntuarioInfo from "$lib/Terapeuta/Prontuarios/PacienteProntuarioInfo/PacienteProntuarioInfo.svelte";
+    import PacienteProntuarioInfo from "$lib/Terapeuta/Prontuarios/PacientesInfo/PacientesInfo.svelte";
     import SearchBar from "$lib/Terapeuta/Prontuarios/SearchBar/SearchBar.svelte";
+    import PacienteInfo from "$lib/Terapeuta/Prontuarios/PacienteProntuariosInfo/PacienteProntuariosInfo.svelte";
     onMount(() => {
     document.title = 'Prontuários - YouMe';
   });
@@ -41,7 +42,7 @@
                         </div>
                     </div>
                     <div class="info-paciente">
-
+                       <PacienteInfo />
                     </div>
                 </div>
             </div>    
@@ -68,6 +69,21 @@
     .inner-row{
         display: flex;
         flex-direction: row;
+        padding-bottom: 15px;
+        margin-top: 30px;
+        height: 100%;
+    }
+    .inner-column{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+
+    .info-paciente{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 481px;
     }
 
     /* Inicio Elementos Padrão */
