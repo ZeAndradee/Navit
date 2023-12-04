@@ -67,32 +67,6 @@
         color: #006AFF;
     }
 
-    .search-bar{
-        margin-top: 45px;
-        display: flex;
-        width: 100%;
-        min-width: 319px;
-        max-width: 585px;
-        height: 48px;
-        padding: 10px 24px 12px 32px;
-        background: white;
-        border-radius: 10px;
-        outline: none;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 0px 2.70309px 27.03093px 0px rgba(69, 69, 80, 0.10);
-    }
-
-    
-    .search-bar input{
-        background: transparent;
-        flex: 1;
-        border: 0;
-        font-family: "Inter", Arial, sans-serif;
-    }
-    
-    .search-bar input:focus { outline: none; }
-    
     .naoencontrou-title{
         display: flex;
         margin-top: 78px;

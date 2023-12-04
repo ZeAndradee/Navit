@@ -37,11 +37,11 @@
 
     .nome-terapeuta{
         font-size: 20px;
-        font-style: normal;
         font-weight: 700;
     }
     .dados-terapeuta{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         margin-top: 20px;
         gap: 8px;
