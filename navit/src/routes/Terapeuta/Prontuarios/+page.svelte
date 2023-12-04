@@ -77,6 +77,7 @@
         display: flex;
         flex-direction: column;
         margin-right: auto;
+        padding-right: 30px;
     }
 
     .info-paciente{

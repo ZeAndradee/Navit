@@ -1,9 +1,134 @@
+<script>
+// @ts-nocheck
+
+    // Row 1
+    let dataNascimentoPaciente = "20/09/2013";
+    let generoPaciente = "Masculino";
+    let sessaoPaciente = "1";
+
+    // Row 2
+    let idPaciente = "h86c0wowtppsujuywq0v4q37";
+
+    //Info Paciente Consulta
+    let social = 1;
+    let comportamento = 5;
+    let fala = 1;
+    let habilidadesMotoras = 7;
+
+    //Funcao para mudar cor do texto
+    function getColorClass(social,comportamento,fala,habilidadesMotoras) {
+        if (social <= 3 || comportamento <= 3 || fala <= 3 || habilidadesMotoras <= 3) {
+            return 'red';
+        } else if (social <= 6 || comportamento <= 6 || fala <= 6 || habilidadesMotoras <= 6) {
+            return 'orange';
+        } else if (social >= 7 || comportamento >= 7 || fala >= 7 || habilidadesMotoras >= 7) {
+            return 'green';
+        }
+    }
+</script>
+
 <div class="card-paciente-info">
     <div class="column">
         <div class="inner-row">
             <div class="txt-nome-paciente"><span>Pedro Henrique</span></div>
             <div class="tag-filtro">
                 <div><span class="txt-status">Ativo</span></div>
+            </div>
+        </div>
+        <div class="inner-column-info" style="margin-top: 24px">
+            <div class="inner-row">
+                <div class="column-info">
+                    <div>
+                        <div class="title-txt"><span>Nascimento:</span></div>
+                        <div class="subtitle-txt"><span>{dataNascimentoPaciente}</span></div>
+                    </div>
+                </div>
+                <div class="column-info">
+                    <div>
+                        <div class="title-txt"><span>Genero:</span></div>
+                        <div class="subtitle-txt"><span>{generoPaciente}</span></div>
+                    </div>
+                </div>
+                <div class="column-info">
+                    <div>
+                        <div class="title-txt"><span>Sessão:</span></div>
+                        <div class="subtitle-txt"><span>Sessão: {sessaoPaciente}</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-row">
+                <div class="column-info">
+                    <div>
+                        <div class="title-txt"><span>ID:</span></div>
+                        <div class="subtitle-txt"><span>{idPaciente}</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Inferior -->
+            <div class="inner-row">
+                <div class="intern-row">
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Social:</span></div>
+                            <div class="subtitle-info-txt"><span class="{getColorClass(social)}">{social}/10</span></div>
+                        </div>
+                    </div>
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Evolução Social:</span></div>
+                            <div class="subtitle-info-txt"><span>Pouco Significativa</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-row">
+                <div class="intern-row">
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Comportamento:</span></div>
+                            <div class="subtitle-info-txt"><span class="{getColorClass(comportamento)}">{comportamento}/10</span></div>
+                        </div>
+                    </div>
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Evolução Compor.:</span></div>
+                            <div class="subtitle-info-txt"><span>Esperado para <br>atividade</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-row">
+                <div class="intern-row">
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Fala:</span></div>
+                            <div class="subtitle-info-txt"><span class="{getColorClass(fala)}">{fala}/10</span></div>
+                        </div>
+                    </div>
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Evolução Verbal:</span></div>
+                            <div class="subtitle-info-txt"><span>Fala comprometida</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-row">
+                <div class="intern-row">
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Habilidades Motoras:</span></div>
+                            <div class="subtitle-info-txt"><span class="{getColorClass(habilidadesMotoras)}">{habilidadesMotoras}/10</span></div>
+                        </div>
+                    </div>
+                    <div class="column-info">
+                        <div>
+                            <div class="title-txt"><span>Evolução Motora:</span></div>
+                            <div class="subtitle-info-txt"><span>Pouco Significativa</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -16,7 +141,7 @@
         align-items: center;
         width: 100%;
         height: 100%;
-        padding: 10px 20px;
+        padding: 25px 20px;
         background-color: white;
         border-radius: 8px;
         justify-content: space-between;
@@ -27,14 +152,20 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        border:red 1px solid;
     }
     .inner-row{
         display: flex;
         flex-direction: row;
         width: 100%;
         height: max-content;
-        border:blue 1px solid;
+        justify-content: space-between;
+    }
+    .inner-column-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        gap: 22px;
     }
 
     .txt-nome-paciente{
@@ -55,4 +186,39 @@
         font-weight: 600;
         color: #15A309;
     }
+    .title-txt{
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .subtitle-txt{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .intern-row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: max-content;
+        justify-content: space-between;
+    }
+
+    .subtitle-info-txt{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        text-wrap: wrap;
+    }
+    .subtitle-info-txt span.red{
+        color: #EE615B;
+    }
+    .subtitle-info-txt span.orange{
+        color: #F28F35;
+    }
+    .subtitle-info-txt span.green{
+        color: #15A309;
+    }
+
 </style>
