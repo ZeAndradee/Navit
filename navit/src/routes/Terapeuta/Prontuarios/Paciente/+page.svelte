@@ -6,6 +6,7 @@
     import Card1 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card1.svelte";
     import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
     import Card3slegenda from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3slegenda.svelte";
+    import Card3legenda from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3legenda.svelte";
     import { onMount } from "svelte";
     
 
@@ -43,7 +44,12 @@
                     </div>
                 </div>
                 <div class="card3">
-                    <Card3slegenda/>
+                    <div class="grafico">
+                        <Card3slegenda/>
+                    </div>
+                    <div class="legenda">
+                        <Card3legenda/>
+                    </div>
                 </div>
             </div>
             <div class="listaprontuario">
@@ -56,7 +62,19 @@
 
 
 <style>
-
+    .legenda{
+        align-items: center;
+        padding: 13px 26px 13px 24px;
+    }
+    .card3{
+        display: flex;
+        width: 618px;
+        height: 233px;
+        padding: 13px 26px 13px 24px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
     .juntinhos{
         flex-direction: row;
         display: flex;

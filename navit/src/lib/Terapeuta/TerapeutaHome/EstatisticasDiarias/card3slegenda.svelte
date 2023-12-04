@@ -45,10 +45,7 @@ import { onMount } from 'svelte';
 <!-- Renderizar o elemento canvas -->
 <div class="card3">
     <div class="txt-header-card"> 
-      <span style="font-size: 18px; font-weight:500;">Status Pacientes</span>
-      <div class="box-hoje">
-        <span style="font-size: 14px; font-weight: 400; color: #656575">Hoje</span>
-      </div>
+      <span style="font-size: 18px; font-weight:500;color: var(--Gray-02, #656575);width: 196px;margin-left:-5px;">Botões Mais Utilizados</span>
     </div>
     <!--Grafico-->
     <div class="grafico-status-pacientes"><canvas bind:this={canvas} width="155px" height="155px"/></div>
@@ -58,13 +55,14 @@ import { onMount } from 'svelte';
   .card3{
     display: flex;
     width: 288px;
-    height: 360px;
+    height: 233px;
     padding: 24px 24px 20px 22px;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
     border-radius: 10px;
     background: #FDFDFD;
+    border-left: 1px #D2D2D2;
     
   }
   .grafico-status-pacientes{
