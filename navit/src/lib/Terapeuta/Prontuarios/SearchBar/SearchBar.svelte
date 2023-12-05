@@ -67,7 +67,7 @@
 
     .row{
         display: flex;
-        margin-top: 36px;
+        margin-top: 30px;
         flex-direction: row;
         height: 100%;
         align-items: center;

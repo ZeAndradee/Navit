@@ -31,7 +31,6 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin-top: 33px;
         align-items: center;
 
     }
@@ -40,6 +39,7 @@
         font-size: 20px;
         font-weight: 700;
         margin-right: 20px;
+        margin-bottom: 10px;
     }
     .cards{
         display: flex;
