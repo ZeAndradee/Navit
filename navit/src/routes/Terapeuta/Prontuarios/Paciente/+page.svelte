@@ -47,9 +47,15 @@
                     <div class="grafico">
                         <Card3slegenda/>
                     </div>
-                    <div class="legenda">
-                        <Card3legenda/>
-                    </div>
+                    <div class="decoracao"></div>
+                    
+                        <div class="legenda">
+                            <Card3legenda/>
+                        </div>
+                        <div class="box-hoje">
+                            <span style="font-size: 14px; font-weight: 400; color: #656575">Hoje</span>
+                          </div>
+                    
                 </div>
             </div>
             <div class="listaprontuario">
@@ -62,18 +68,40 @@
 
 
 <style>
+    .grafico{
+        border:blue 1px solid;
+    }
+    .decoracao{
+    width: 1px;
+    height: 206px;
+    flex-shrink: 0;
+    background: #D2D2D2;
+    margin-right: 1cm;
+    }
+     .box-hoje{
+        margin-left: -1cm;
+        width: 52px;
+        height: 24px;
+        border-radius: 2px;
+        padding: 4px 8px;
+        background: #F4F5F7;
+        display: flex;
+        margin-bottom: 4cm;
+       
+      }
     .legenda{
-        align-items: center;
-        padding: 13px 26px 13px 24px;
+        display: flex;
+        border:blue 1px solid;
     }
     .card3{
         display: flex;
-        width: 618px;
+        width: 610px;
         height: 233px;
-        padding: 13px 26px 13px 24px;
-        justify-content: center;
         align-items: center;
         flex-shrink: 0;
+        border-radius: 8px;
+        background: white;
+        margin-top: 0.5cm;
     }
     .juntinhos{
         flex-direction: row;
