@@ -6,6 +6,8 @@
     import PacienteProntuarioInfo from "$lib/Terapeuta/Prontuarios/PacientesInfo/PacientesInfo.svelte";
     import SearchBar from "$lib/Terapeuta/Prontuarios/SearchBar/SearchBar.svelte";
     import PacienteInfo from "$lib/Terapeuta/Prontuarios/PacienteProntuariosInfo/PacienteProntuariosInfo.svelte";
+    import TableProntuarios from "$lib/Terapeuta/Prontuarios/TableProntuarios/TableProntuarios.svelte";
+    
     onMount(() => {
     document.title = 'Prontuários - YouMe';
   });
@@ -38,7 +40,7 @@
                             <SearchBar />
                         </div>
                         <div class="prontuarios">
-
+                            <TableProntuarios />
                         </div>
                     </div>
                     <div class="info-paciente">
@@ -72,19 +74,27 @@
         padding-bottom: 15px;
         margin-top: 30px;
         height: 100%;
+        justify-content: space-between;
     }
     .inner-column{
         display: flex;
         flex-direction: column;
-        margin-right: auto;
-        padding-right: 30px;
     }
 
     .info-paciente{
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 481px;
+        width: max-content;
+        align-items: end;
+    }
+
+    .prontuarios{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
     }
 
     /* Inicio Elementos Padrão */

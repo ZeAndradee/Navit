@@ -10,7 +10,7 @@
     let idPaciente = "h86c0wowtppsujuywq0v4q37";
 
     //Info Paciente Consulta
-    let social = 1;
+    let social = 5;
     let comportamento = 5;
     let fala = 1;
     let habilidadesMotoras = 7;
@@ -66,71 +66,51 @@
             </div>
 
             <!-- Info Inferior -->
-            <div class="inner-row">
-                <div class="intern-row">
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Social:</span></div>
-                            <div class="subtitle-info-txt"><span class="{getColorClass(social)}">{social}/10</span></div>
-                        </div>
+            <div class="inner-row2">
+                <div class="left-column">
+                    <div>
+                        <div class="title-txt"><span>Social:</span></div>
+                        <div class="subtitle-info-txt"><span class="{getColorClass(social)}">{social}/10</span></div>
                     </div>
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Evolução Social:</span></div>
-                            <div class="subtitle-info-txt"><span>Pouco Significativa</span></div>
-                        </div>
+                    <div>
+                        <div class="title-txt"><span>Comportamento:</span></div>
+                        <div class="subtitle-info-txt"><span class="{getColorClass(comportamento)}">{comportamento}/10</span></div>
                     </div>
-                </div>
-            </div>
-            <div class="inner-row">
-                <div class="intern-row">
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Comportamento:</span></div>
-                            <div class="subtitle-info-txt"><span class="{getColorClass(comportamento)}">{comportamento}/10</span></div>
-                        </div>
+                    <div>
+                        <div class="title-txt"><span>Fala:</span></div>
+                        <div class="subtitle-info-txt"><span class="{getColorClass(fala)}">{fala}/10</span></div>
                     </div>
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Evolução Compor.:</span></div>
-                            <div class="subtitle-info-txt"><span>Esperado para <br>atividade</span></div>
-                        </div>
+                    <div>
+                        <div class="title-txt"><span>Habilidades Motoras:</span></div>
+                        <div class="subtitle-info-txt"><span class="{getColorClass(habilidadesMotoras)}">{habilidadesMotoras}/10</span></div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-row">
-                <div class="intern-row">
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Fala:</span></div>
-                            <div class="subtitle-info-txt"><span class="{getColorClass(fala)}">{fala}/10</span></div>
-                        </div>
+                <div class="right-column">
+                    <div>
+                        <div class="title-txt"><span>Evolução Social:</span></div>
+                        <div class="subtitle-info-txt"><span class="orange">Pouco Significativa</span></div>
                     </div>
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Evolução Verbal:</span></div>
-                            <div class="subtitle-info-txt"><span>Fala comprometida</span></div>
-                        </div>
+                    <div>
+                        <div class="title-txt"><span>Evolução Comportamento:</span></div>
+                        <div class="subtitle-info-txt"><span class="green">Esperado para atividade</span></div>
                     </div>
-                </div>
-            </div>
-            <div class="inner-row">
-                <div class="intern-row">
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Habilidades Motoras:</span></div>
-                            <div class="subtitle-info-txt"><span class="{getColorClass(habilidadesMotoras)}">{habilidadesMotoras}/10</span></div>
-                        </div>
+                    <div>
+                        <div class="title-txt"><span>Evolução Verbal:</span></div>
+                        <div class="subtitle-info-txt"><span class="red">Fala comprometida</span></div>
                     </div>
-                    <div class="column-info">
-                        <div>
-                            <div class="title-txt"><span>Evolução Motora:</span></div>
-                            <div class="subtitle-info-txt"><span>Pouco Significativa</span></div>
-                        </div>
+                    <div>
+                        <div class="title-txt"><span>Evolução Motora:</span></div>
+                        <div class="subtitle-info-txt"><span class="orange">Pouco Significativa</span></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="div-btn-expandir">
+            <button class="btn-expandir">
+                <span>Expandir</span>
+            </button>
+        </div>
+        
     </div>
 </div>
 
@@ -139,7 +119,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 22vw;
         height: 100%;
         padding: 25px 20px;
         background-color: white;
@@ -159,6 +139,14 @@
         width: 100%;
         height: max-content;
         justify-content: space-between;
+    }
+    .inner-row2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: max-content;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .inner-column-info{
         display: flex;
@@ -196,13 +184,18 @@
         font-style: normal;
         font-weight: 700;
     }
-
-    .intern-row{
+    .left-column{
         display: flex;
-        flex-direction: row;
-        width: 100%;
+        flex-direction: column;
         height: max-content;
-        justify-content: space-between;
+        width: max-content;
+        gap: 22px;
+    }
+    .right-column{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 22px;
     }
 
     .subtitle-info-txt{
@@ -220,5 +213,29 @@
     .subtitle-info-txt span.green{
         color: #15A309;
     }
+
+    /* Botao Expandir */
+    .div-btn-expandir{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-expandir{
+        display: flex;
+        padding: 8px 60px;
+        background-color: #006AFF;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 17px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
 
 </style>
