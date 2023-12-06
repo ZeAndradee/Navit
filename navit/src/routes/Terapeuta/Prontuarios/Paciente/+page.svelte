@@ -7,11 +7,12 @@
     import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
     import Card3slegenda from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3slegenda.svelte";
     import Card3legenda from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3legenda.svelte";
+    import ListaSessoes from "$lib"
     import { onMount } from "svelte";
     
 
     onMount(() => {
-    document.title = 'Nome da página';
+    document.title = 'Paciente';
   });
 </script>
 
@@ -68,8 +69,11 @@
 
 
 <style>
+    .card2{
+        margin-left: 0.1cm;
+    }
     .grafico{
-        border:blue 1px solid;
+        margin-bottom: 0.1cm;
     }
     .decoracao{
     width: 1px;
@@ -77,6 +81,7 @@
     flex-shrink: 0;
     background: #D2D2D2;
     margin-right: 1cm;
+    border: 1px solid #E0E4EC;
     }
      .box-hoje{
         margin-left: -1cm;
@@ -87,38 +92,40 @@
         background: #F4F5F7;
         display: flex;
         margin-bottom: 4cm;
+        align-items: center;
        
       }
     .legenda{
         display: flex;
-        border:blue 1px solid;
     }
     .card3{
         display: flex;
-        width: 610px;
+        width: 617px;
         height: 233px;
         align-items: center;
         flex-shrink: 0;
         border-radius: 8px;
         background: white;
         margin-top: 0.5cm;
+        border: 1px solid #E0E4EC;
     }
     .juntinhos{
         flex-direction: row;
         display: flex;
         gap: 35px;
-        border:blue 1px solid;
+        margin-top: 0.5cm;
     }
     .infopaciente{
         display: flex;
         margin-top: 17px;
+        
     }
     .info{
         display: flex;
         flex-direction: column;
         margin-left: 60px;
         margin-top: 51px;
-        border:red 1px solid;
+        border: 1px solid #E0E4EC;
     }
     /* Inicio Elementos Padrão*/
     .row{

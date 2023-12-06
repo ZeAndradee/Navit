@@ -29,6 +29,7 @@
       border-radius: 10px;
       align-items: center;
       padding: 20px;
+      border: 1px solid #E0E4EC;
     }
   
     .id {

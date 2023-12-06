@@ -31,6 +31,7 @@
     height: 79px;
     border-radius: 10px;
     background-color: #FFFFFF;
+    border: 1px solid #E0E4EC;
   }
 
   .foto-paciente img {
