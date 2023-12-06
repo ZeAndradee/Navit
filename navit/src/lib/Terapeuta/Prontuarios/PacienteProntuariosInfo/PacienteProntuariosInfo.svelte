@@ -10,7 +10,7 @@
     let idPaciente = "h86c0wowtppsujuywq0v4q37";
 
     //Info Paciente Consulta
-    let social = 5;
+    let social = 8;
     let comportamento = 5;
     let fala = 1;
     let habilidadesMotoras = 7;
