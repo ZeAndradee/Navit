@@ -120,7 +120,7 @@
         flex-direction: column;
         align-items: center;
         width: 22vw;
-        height: 100%;
+        height: fit-content;
         padding: 25px 20px;
         background-color: white;
         border-radius: 8px;
@@ -136,9 +136,11 @@
     .inner-row{
         display: flex;
         flex-direction: row;
+        gap: 5px;
         width: 100%;
         height: max-content;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     .inner-row2{
         display: flex;
@@ -183,6 +185,7 @@
         font-size: 15px;
         font-style: normal;
         font-weight: 700;
+        word-wrap: break-word;
     }
     .left-column{
         display: flex;
@@ -219,6 +222,7 @@
         display: flex;
         width: 100%;
         height: 100%;
+        padding: 45px 15px 15px 15px;
         justify-content: center;
         align-items: center;
     }
@@ -237,5 +241,9 @@
         font-weight: 400;
     }
 
-
+    @media (max-width: 1186px){
+        .card-paciente-info{
+            width: fit-content;
+        }
+}
 </style>

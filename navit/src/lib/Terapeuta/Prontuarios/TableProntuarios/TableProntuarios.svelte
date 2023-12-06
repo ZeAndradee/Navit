@@ -127,4 +127,22 @@
         font-style: normal;
         font-weight: 600;
     }
+    @media (max-width: 813px){
+        .txt-info-paciente-data-nasc{
+            display: none;
+        }
+        .txt-info-paciente-sessao{
+            display: none;
+        }
+    }
+    @media (max-width: 630px){
+        .btn-show{
+            display: none;
+        }
+    }
+    @media (max-width: 571px){
+        .txt-info-paciente-ult-att{
+            display: none;
+        }
+    }
 </style>

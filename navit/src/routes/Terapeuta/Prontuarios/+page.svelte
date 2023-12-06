@@ -139,4 +139,15 @@
         margin-left: auto;
     }
 /* Fim Elementos Padrão*/
+
+@media (max-width: 1186px){
+    .inner-row{
+        flex-wrap: wrap;
+    }
+    .info-paciente{
+        width: 100%;
+        align-items: center;
+        margin-top: 15px;
+    }
+}
 </style>

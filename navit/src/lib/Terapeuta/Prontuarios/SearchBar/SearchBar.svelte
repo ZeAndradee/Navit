@@ -29,15 +29,17 @@
             </button>
         </form>
     </div>
-    <button>
-        <span style="text-decoration: underline;">Filtrar</span>
-    </button>
-    <div class="tag-filtro">
-        <div><span class="txt-status">Status: Todos</span></div>
-        <button class="close-btn">x</button>
-    </div>
-    <div class="last-att">
-        <span>Última Atualização: {dataFormatada}</span>
+    <div class="row2">
+        <button>
+            <span style="text-decoration: underline;">Filtrar</span>
+        </button>
+        <div class="tag-filtro">
+            <div><span class="txt-status">Status: Todos</span></div>
+            <button class="close-btn">x</button>
+        </div>
+        <div class="last-att">
+            <span>Última Atualização: {dataFormatada}</span>
+        </div>
     </div>
 </div>
 <style>
@@ -67,10 +69,18 @@
 
     .row{
         display: flex;
+        flex-wrap: wrap;
         margin-top: 30px;
         flex-direction: row;
         height: max-content;
         align-items: center;
+        gap: 24px;
+    }
+    .row2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100%;
         gap: 24px;
     }
 
