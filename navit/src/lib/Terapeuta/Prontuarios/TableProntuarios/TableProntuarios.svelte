@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
 
-    export let tagValue = "Concluído";
+    export let tagValue = "Finalizado";
     export let nomePaciente = "Pedro Henrique";
     export let dataNascimentoPaciente = "20/09/2013";
     export let sessaoPaciente = "1";
@@ -12,8 +12,10 @@
             return ['green', 'greenn'];
         } else if (tagValue === "Em Andamento") {
             return ['blue', 'bluee'];
-        } else if (tagValue === "Concluído") {
+        } else if (tagValue === "Finalizado") {
             return ['red', 'redd'];
+        } else {
+            return ['defaultColor', 'defaultBgColor']; // Retorno padrão
         }
     }
 
@@ -87,6 +89,9 @@
     .tag-filtro span.red{
         color: #CE0606;
     }
+    .tag-filtro span.defaultColor{
+        color: #6C6C6C;
+    }
     .tag-filtro.greenn{
         background-color: #15A30933;
     }
@@ -95,6 +100,9 @@
     }
     .tag-filtro.redd{
         background-color: #CE060633;
+    }
+    .tag-filtro.defaultBgColor{
+        background-color: #6C6C6C33;
     }
     .txt-info-paciente-nome{
         width: 110px;
