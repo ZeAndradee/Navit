@@ -77,7 +77,7 @@ A tela de login é composta por 6 arquivos .svelte: Header, SideBarMenu, Estatis
 <ul><li>Permite que o terapeuta consiga visualizar a média comportamental dos pacientes em 6 tópicos diferentes, Feliz, Atento, Confuso, Agitado, Calmo e Triste.</li></ul>
 <br>
 
-<p>Utilizamos principalmente a biblioteca chat.js para construção dos gráficos.</p>
+<p>Utilizamos principalmente a biblioteca chart.js para construção dos gráficos.</p>
 
 <br/>
 <br/>
