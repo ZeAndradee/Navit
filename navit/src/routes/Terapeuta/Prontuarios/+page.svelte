@@ -6,6 +6,8 @@
     import PacienteProntuarioInfo from "$lib/Terapeuta/Prontuarios/PacientesInfo/PacientesInfo.svelte";
     import SearchBar from "$lib/Terapeuta/Prontuarios/SearchBar/SearchBar.svelte";
     import PacienteInfo from "$lib/Terapeuta/Prontuarios/PacienteProntuariosInfo/PacienteProntuariosInfo.svelte";
+    import TableProntuarios from "$lib/Terapeuta/Prontuarios/TableProntuarios/CardProntuarios.svelte";
+    
     onMount(() => {
     document.title = 'Prontuários - YouMe';
   });
@@ -37,8 +39,8 @@
                         <div class="search">
                             <SearchBar />
                         </div>
-                        <div class="prontuarios">
-
+                        <div class="tabela-prontuarios">
+                            <TableProntuarios />
                         </div>
                     </div>
                     <div class="info-paciente">
@@ -69,22 +71,33 @@
     .inner-row{
         display: flex;
         flex-direction: row;
-        padding-bottom: 15px;
+        padding: 0px 15px 15px 0;
         margin-top: 30px;
         height: 100%;
+        justify-content: space-between;
+        
     }
     .inner-column{
         display: flex;
         flex-direction: column;
-        margin-right: auto;
-        padding-right: 30px;
+        width: 100%;
+        padding-right: 15px;
     }
 
     .info-paciente{
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 481px;
+        width: max-content;
+        align-items: end;
+    }
+
+    .tabela-prontuarios{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
     }
 
     /* Inicio Elementos Padrão */
@@ -126,4 +139,15 @@
         margin-left: auto;
     }
 /* Fim Elementos Padrão*/
+
+@media (max-width: 1186px){
+    .inner-row{
+        flex-wrap: wrap;
+    }
+    .info-paciente{
+        width: 100%;
+        align-items: center;
+        margin-top: 15px;
+    }
+}
 </style>

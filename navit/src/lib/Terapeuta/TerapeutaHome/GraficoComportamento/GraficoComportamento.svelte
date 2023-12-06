@@ -16,6 +16,13 @@
         }]
     };
 
+    function calculateFontSize() {
+        let baseSize = 16;
+        let windowWidth = window.innerWidth;
+        let scaleFactor = windowWidth / 1800;
+        return baseSize * scaleFactor;
+    }
+
     onMount(() => {
         // @ts-ignore
         if (canvas && canvas.getContext) {
@@ -25,6 +32,8 @@
                     type: 'radar',
                     data: data,
                     options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
                         plugins: {
                             legend: {
                                 display: false
@@ -34,15 +43,16 @@
                             r: {
                                 ticks: {
                                     display: false,
-                                    stepSize: 15, // Altere para o valor desejado
+                                    stepSize: 15,
                                     maxTicksLimit: 5
                                 },
                                 pointLabels: {
                                     font: {
-                                        size: 16,
+                                        size: calculateFontSize(),
                                         weight: '600',
+                                        family: 'Inter',
                                     },
-                                    color: 'black', // Altere para a cor desejada
+                                    color: 'black',
                                 }
                             }
                         },
@@ -73,19 +83,23 @@
     .card-grafico-comportamento{
         display: flex;
         flex-direction: column;
-        width: 425px;
+        height: 100%;
+        width: 100%;
+        min-width: 280px;
         background-color: white;
-        padding: 20px;
-        margin-left: 28px;
-        margin-top: 28px;
         border-radius: 10px;
-        margin-bottom: 18px;
+        border: 1px solid #E0E4EC;
+        padding: 10px;
     }
 
     .grafico{
         width: 100%;
         height: 100%;
-        margin-right: 58px;
+    }
 
+    @media(max-width: 1629){
+        .card-grafico-comportamento{
+            width: 70%;
+        }
     }
 </style>
