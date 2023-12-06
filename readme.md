@@ -20,8 +20,7 @@
   <li>Javascript</li>
   <li>CSS</li>
   <li>Git e Github</li>
-  <li>React.js</li>
-  <li>React-Bootstrap</li>
+  <li>Svelte</li>
   <li>Node version managers(NPM)</li>
   <li>VS Code</li>
   <li>Vercel</li>
