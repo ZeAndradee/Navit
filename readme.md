@@ -35,7 +35,7 @@
 * npm start
 
 # :hammer: Funcionalidades e Demonstração da Aplicação
-`Tela Principal`: <p>representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais.</p> 
+`Tela de Login`: <p>tela de login incial do terapeuta.</p> 
 
 ![Tela Inicial](<src/Assets/Readme/Tela Inicial.png>)
 
