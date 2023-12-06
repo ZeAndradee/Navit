@@ -84,7 +84,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 80%;
+        width: 100%;
         min-width: 280px;
         background-color: white;
         border-radius: 10px;
@@ -95,5 +95,11 @@
     .grafico{
         width: 100%;
         height: 100%;
+    }
+
+    @media(max-width: 1629){
+        .card-grafico-comportamento{
+            width: 70%;
+        }
     }
 </style>

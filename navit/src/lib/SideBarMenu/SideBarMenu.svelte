@@ -188,8 +188,7 @@
          <div class="opcoes">
             <!--Opção 1 Sidebar-->
             <li>
-               <a href="/Terapeuta/TerapeutaHome">
-                  <button class="btn-NClicado" on:click={() => selectedButton = 'inicio' } style="background-color: {selectedButton === 'inicio' ? '#006AFF' : 'transparent'}">
+                  <button class="btn-NClicado" on:click={() => selectedButton = 'inicio' } style="background-color: {selectedButton === 'inicio' ? '#006AFF' : 'transparent'}" on:click={navigateToHome}>
                      <div class="txticon">
                         <div class="icon">
                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: {selectedButton === 'inicio' ? 'white' : 'black'}">
@@ -203,13 +202,11 @@
                         </div>
                      </div>
                   </button>
-               </a>
             </li>
 
             <!--Opção 2 Sidebar-->
             <li>
-               <a href="/Terapeuta/TerapeutaProntuarioPaciente1">
-                  <button class="btn-NClicado" on:click={() => selectedButton = 'prontuario' } style="background-color: {selectedButton === 'prontuario' ? '#006AFF' : 'transparent'}">
+                  <button class="btn-NClicado" on:click={() => selectedButton = 'prontuario' } style="background-color: {selectedButton === 'prontuario' ? '#006AFF' : 'transparent'}" on:click={navigateToProntuarios}>
                      <div class="txticon">
                         <div class="icon">
                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: {selectedButton === 'prontuario' ? 'white' : 'black'}">
@@ -226,7 +223,6 @@
                         </div> 
                      </div>
                   </button>
-               </a>
             </li>
 
             <!--Opção 3 Sidebar-->
@@ -247,8 +243,7 @@
 
          <!--Opção 4 Sidebar-->
          <li>
-               <a href="/Terapeuta/Configuracoes">
-                  <button class="btn-NClicado" on:click={() => selectedButton = 'configuracoes' } style="background-color: {selectedButton === 'configuracoes' ? '#006AFF' : 'transparent'}">
+                  <button class="btn-NClicado" on:click={() => selectedButton = 'configuracoes' } style="background-color: {selectedButton === 'configuracoes' ? '#006AFF' : 'transparent'}" on:click={navigateToConfig}>
                      <div class="txticon">
                         <div class="icon">
                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="stroke: {selectedButton === 'configuracoes' ? 'white' : 'black'}">
@@ -260,13 +255,11 @@
                         </div>
                      </div>
                   </button>
-               </a>
             </li>
 
          <!--Opção 5 Sidebar-->
          <li>
-            <a href="/Terapeuta/Duvidas">
-               <button class="btn-NClicado" on:click={() => selectedButton = 'duvidas' } style="background-color: {selectedButton === 'duvidas' ? '#006AFF' : 'transparent'}">
+               <button class="btn-NClicado" on:click={() => selectedButton = 'duvidas' } style="background-color: {selectedButton === 'duvidas' ? '#006AFF' : 'transparent'}" on:click={navigateToHelp}>
                   <div class="txticon">
                      <div class="icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="fill: {selectedButton === 'duvidas' ? 'white' : 'black'}">
@@ -277,11 +270,10 @@
                      </div>
                   </div>
                </button>
-            </a>
          </li>
          <!--Opção Perfil (Oculto)-->
          <li>
-           <button class="btn-NClicado">
+           <button class="btn-NClicado" on:click={navigateToConfig}>
                   <div class="txticon">
                      <div class="icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

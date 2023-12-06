@@ -66,6 +66,8 @@
         display: flex;
         flex-direction: row;
         padding-top: 15px;
+        gap: 4%;
+        justify-content: center;
     }    
 
     .intern-column{
@@ -97,15 +99,12 @@
     }
 
     .lista-pacientes{
-        position: relative;
         display: flex;
-
     }
 
     .grafico-comportamento{
         display: flex;
-        width: 100%;
-        justify-content: end;
+        width: 35%;
     }
 
     .header{
@@ -126,7 +125,7 @@
         display: flex;
     }
 
-    @media(max-width: 1300px){
+    @media(max-width: 1366px){
         .row-inferior{
             flex-wrap: wrap;
             justify-content: center;
@@ -134,9 +133,15 @@
         .lista-pacientes{
             justify-content: center;
         }
-        .grafico-comportamento{
-            padding-top: 15px;  
+        .grafico-comportamento{ 
             justify-content: center;
+            margin-top: 15px;
         }
+    }
+    @media(max-width: 1348px){
+        .grafico-comportamento{ 
+            justify-content: center;
+            width: 70%;
+        } 
     }
 </style>
