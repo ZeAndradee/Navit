@@ -42,6 +42,7 @@
         margin-left: 50px;
         margin-right: 50px;
         margin-top: 50px;
+        border: 1px solid #E0E4EC;
     }
 
     .header-row{

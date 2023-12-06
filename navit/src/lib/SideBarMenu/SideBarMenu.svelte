@@ -187,7 +187,7 @@
             </li>
          <div class="opcoes">
             <!--Opção 1 Sidebar-->
-            <li>
+            <li class="btn">
                   <button class="btn-NClicado" on:click={() => selectedButton = 'inicio' } style="background-color: {selectedButton === 'inicio' ? '#006AFF' : 'transparent'}" on:click={navigateToHome}>
                      <div class="txticon">
                         <div class="icon">
@@ -322,6 +322,8 @@
    margin-right: 10%;
 }
 
+
+
 .btn-perfil{
    display: none;
 }
@@ -399,10 +401,6 @@
       gap: 12px;
    }
 
-   button:hover {
-      background-color: rgba(0, 0, 0, 0.039);
-   }
-
 @media (max-width: 1000px) {
       .sidebar {
          display: none;
@@ -473,5 +471,4 @@
       margin-top: 8px;
    }
 }
-
 </style>

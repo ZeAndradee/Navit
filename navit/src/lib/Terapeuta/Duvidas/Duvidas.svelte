@@ -117,6 +117,7 @@
         height: 100%;
         border-radius: 10px;
         padding: 40px 48px 40px 40px;
+        
     }
     .column{
         display: flex;
@@ -134,6 +135,7 @@
         height: 100%;
         border-radius: 10px;
         background-color: white;
+        border: 1px solid #E0E4EC;
     }
     .header-txt{
         display: flex;
