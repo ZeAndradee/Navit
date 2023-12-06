@@ -69,7 +69,7 @@
         display: flex;
         margin-top: 30px;
         flex-direction: row;
-        height: 100%;
+        height: max-content;
         align-items: center;
         gap: 24px;
     }
