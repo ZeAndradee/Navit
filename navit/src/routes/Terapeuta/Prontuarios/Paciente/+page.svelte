@@ -1,5 +1,5 @@
 <script>
-    import Infopaci from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaci/infopaci.svelte";
+    import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaci/infopaci.svelte";
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
     import Headerpaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/headerPaciente/headerpaciente.svelte";
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte";
@@ -7,7 +7,7 @@
     import Card2 from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card2.svelte";
     import Card3slegenda from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3slegenda.svelte";
     import Card3legenda from "$lib/Terapeuta/TerapeutaHome/EstatisticasDiarias/card3legenda.svelte";
-    import ListaSessoes from "$lib"
+    import ListaSessoes from "$lib/Terapeuta/Terapeuta-Prontuarios2/ListaSessoes/ListaSessoes.svelte";
     import { onMount } from "svelte";
     
 
@@ -18,10 +18,10 @@
 
 <div class="row">
     <div class="sidebar">
-        <SideBarMenuInicio selectedButton="prontuarios" />
+        <SideBarMenuInicio selectedButton="prontuario" />
     </div>
     <div class="sidebarr">
-        <SideBarMenuInicio selectedButton="prontuarios" />
+        <SideBarMenuInicio selectedButton="prontuario" />
     </div>
     <div class="column">
             <div class="header">
@@ -29,104 +29,42 @@
                     <Header />
                 </div>
             </div>
-            <div class="info">
-                <div class="headerpaciente">
-                    <Headerpaciente/>
-                </div>
-                <div class="infopaciente">
-                    <Infopaci/>
-                </div>
-                <div class="juntinhos">
-                    <div class="card1">
-                        <Card1/>
+            <div class="inner-row">
+                <div class="inner-column">
+                    <div>
+                        <Headerpaciente />
                     </div>
-                    <div class="card2">
-                        <Card2/>
+                    <div>
+                        <InfoPaciente />
                     </div>
                 </div>
-                <div class="card3">
-                    <div class="grafico">
-                        <Card3slegenda/>
-                    </div>
-                    <div class="decoracao"></div>
-                    
-                        <div class="legenda">
-                            <Card3legenda/>
-                        </div>
-                        <div class="box-hoje">
-                            <span style="font-size: 14px; font-weight: 400; color: #656575">Hoje</span>
-                          </div>
-                    
-                </div>
-            </div>
-            <div class="listaprontuario">
+                <div class="inner-column">
 
-            </div>
-            
+                </div>
+            </div>      
     </div>
 </div>
         
 
 
 <style>
-    .card2{
-        margin-left: 0.1cm;
-    }
-    .grafico{
-        margin-bottom: 0.1cm;
-    }
-    .decoracao{
-    width: 1px;
-    height: 206px;
-    flex-shrink: 0;
-    background: #D2D2D2;
-    margin-right: 1cm;
-    border: 1px solid #E0E4EC;
-    }
-     .box-hoje{
-        margin-left: -1cm;
-        width: 52px;
-        height: 24px;
-        border-radius: 2px;
-        padding: 4px 8px;
-        background: #F4F5F7;
+    .inner-row{
         display: flex;
-        margin-bottom: 4cm;
-        align-items: center;
-       
-      }
-    .legenda{
-        display: flex;
-    }
-    .card3{
-        display: flex;
-        width: 617px;
-        height: 233px;
-        align-items: center;
-        flex-shrink: 0;
-        border-radius: 8px;
-        background: white;
-        margin-top: 0.5cm;
-        border: 1px solid #E0E4EC;
-    }
-    .juntinhos{
         flex-direction: row;
-        display: flex;
-        gap: 35px;
-        margin-top: 0.5cm;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border: red solid 1px;
     }
-    .infopaciente{
-        display: flex;
-        margin-top: 17px;
-        
-    }
-    .info{
+
+    .inner-column{
         display: flex;
         flex-direction: column;
-        margin-left: 60px;
-        margin-top: 51px;
-        border: 1px solid #E0E4EC;
+        width: 100%;
+        height: 100%;
+        border: blue solid 1px;
     }
+
     /* Inicio Elementos Padrão*/
     .row{
         display: flex;

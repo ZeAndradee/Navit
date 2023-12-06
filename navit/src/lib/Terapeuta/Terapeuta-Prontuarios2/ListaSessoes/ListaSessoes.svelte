@@ -18,54 +18,7 @@
           <p class="numeracao">01</p>
           <li class="sessao">Sessão 10</li>
           <button class="button">Detalhes</button>
-        </div>
-        <div class="container_b">
-          <p class="numeracao">02</p>
-          <li class="sessao">Sessão 09</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_c">
-          <p class="numeracao">03</p>
-          <li class="sessao">Sessão 08</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_d">
-          <p class="numeracao">04</p>
-          <li class="sessao">Sessão 07</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_e">
-          <p class="numeracao">05</p>
-          <li class="sessao">Sessão 06</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_f">
-          <p class="numeracao">06</p>
-          <li class="sessao">Sessão 05</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_g">
-          <p class="numeracao">07</p>
-          <li class="sessao">Sessão 04</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_h">
-          <p class="numeracao">08</p>
-          <li class="sessao">Sessão 03</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_i">
-          <p class="numeracao">09</p>
-          <li class="sessao">Sessão 02</li>
-          <button class="button">Detalhes</button>
-        </div>
-        <div class="container_j">
-            <p class="numeracao">10</p>
-            <li class="sessao">Sessão 01</li>
-            <button class="button">Detalhes</button>
-        </div>
       </div>
-    </ul>
   </div>
 </div>
 
@@ -142,7 +95,7 @@
     border-radius: 15px;
     border: 3px solid #ffffff;
   }
-  .container_a , .container_b , .container_c, .container_d , .container_e, .container_f, .container_g, .container_h, .container_i, .container_j{
+  .container_a{
     align-items: center;
     background-color:#FFFFFF;
     display: flex;

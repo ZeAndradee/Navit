@@ -1,21 +1,19 @@
 
 
-<body>
-    <div class="container">
-      <p class="id">ID</p>
-      <p class="num-id">q7h3dauolwft7qyi3kb5bbhn</p>
-      <p class = "nascimento">Data de nascimento</p>
-      <p class = "data-nasci">12/05/2004</p>
-      <p class="gen">Gênero</p>
-      <p class="fem">Feminino</p>
-      <p class="random">Data Qualquer</p>
-      <p class="randomdata">07/03/2023</p>
-      <p class="primsessao">Primeira Sessão</p>
-      <p class="primsessao-data">15/05/2023</p>
-      <p class="ultsessao">Ultima Sessão</p>
-      <p class="ultsessao-data">20/10/2023</p>
-    </div>
-  </body>
+<div class="container">
+  <p class="id">ID</p>
+  <p class="num-id">q7h3dauolwft7qyi3kb5bbhn</p>
+  <p class = "nascimento">Data de nascimento</p>
+  <p class = "data-nasci">12/05/2004</p>
+  <p class="gen">Gênero</p>
+  <p class="fem">Feminino</p>
+  <p class="random">Data Qualquer</p>
+  <p class="randomdata">07/03/2023</p>
+  <p class="primsessao">Primeira Sessão</p>
+  <p class="primsessao-data">15/05/2023</p>
+  <p class="ultsessao">Ultima Sessão</p>
+  <p class="ultsessao-data">20/10/2023</p>
+</div>
   
   
   <style>

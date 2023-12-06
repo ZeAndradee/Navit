@@ -140,6 +140,7 @@
     .nome-span{
         font-size: 16px;
         font-weight: 500;
+        
     }
     .categoria-span{
         font-size: 14px;
