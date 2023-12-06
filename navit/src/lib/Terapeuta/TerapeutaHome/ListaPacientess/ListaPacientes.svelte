@@ -52,10 +52,8 @@
         width: 384px;
         background-color: white;
         padding: 20px;
-        margin-left: 28px;
-        margin-top: 28px;
         border-radius: 10px;
-        margin-bottom: 18px;
+        border: 1px solid #E0E4EC;
     }
 
     .paciente{

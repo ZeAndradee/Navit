@@ -27,13 +27,13 @@
   <div class="estatisticasDiarias">
     <div class="div-txt">
       <span class="txt">Estatísticas Diárias</span>
-      <span class="txt" style="font-size: 15px; color: #A3A3A3; font-weight: 400">{dataFormatada}</span>    </div>
+      <span class="txt" style="font-size: 15px; color: #A3A3A3; font-weight: 400">{dataFormatada}</span>
+    </div>  
       <div class="cards">
         <Card1 />
         <Card2 />
         <Card3 />
       </div>
-      
   </div>
   
 </div>
@@ -42,19 +42,18 @@
   .background-div{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 344px;
+    height: 100%;
+    width: max-content;
+    padding: 52px 20px 20px 20px;
   }
 
   .div-txt{
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
     margin-bottom: 18px;
   }
 
   .txt{
-    margin-left: 8%;
     font-size: 20px;
     font-weight: 500;
     color: #525256;

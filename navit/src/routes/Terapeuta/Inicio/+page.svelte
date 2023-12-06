@@ -20,7 +20,7 @@
             <SideBarMenuInicio selectedButton="inicio" />
         </div>
 
-        <div class="estatisticas">
+        <div class="estatisticas-diarias">
             <EstatisticasDiarias />
         </div>
         
@@ -30,23 +30,22 @@
                     <Header />
                 </div>
             </div>
-            <div class="grafico-cliques">
-                <GraficoCliques />
-            </div>
-            <div class="row-inferior">
-                <div class="lista-pacientes">
-                    <ListaPacientes/>
+            <div class="intern-column">
+                <div class="grafico-cliques">
+                    <GraficoCliques />
                 </div>
-                <div class="grafico-comportamento">
-                    <GraficoComportamento />
+                <div class="row-inferior">
+                    <div class="lista-pacientes">
+                        <ListaPacientes/>
+                    </div>
+                    <div class="grafico-comportamento">
+                        <GraficoComportamento />
+                    </div>
                 </div>
-            </div>
+            </div>    
         </div>
-            
     </div>
     
-
-
 <style>
     
     .row{
@@ -56,7 +55,7 @@
         }
 
     .column{
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -65,8 +64,17 @@
         height: 100%;
         width: 100%;
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
+        padding-top: 15px;
     }    
+
+    .intern-column{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 44px 48px 0px 0px;
+    }
 
     .sidebar{
         display: flex;
@@ -82,9 +90,10 @@
         margin-right: 10px;
         
     }
-    .estatisticas{
+    .estatisticas-diarias{
         display: flex;
-        height: 100vh;
+        height: 100%;
+        width: max-content;
     }
 
     .lista-pacientes{
@@ -94,10 +103,9 @@
     }
 
     .grafico-comportamento{
-        margin-left: auto;
-        position: relative;
         display: flex;
-        margin-right: 43px;
+        width: 100%;
+        justify-content: end;
     }
 
     .header{
@@ -117,19 +125,18 @@
         position: relative;
         display: flex;
     }
-    
-    @media (max-width: 1493px){
+
+    @media(max-width: 1300px){
         .row-inferior{
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .lista-pacientes{
+            justify-content: center;
         }
         .grafico-comportamento{
-            margin-left: 0;
-        }
-    }
-
-    @media(max-width: 1162px){
-        .header{
-            margin-right: 20px;
+            padding-top: 15px;  
+            justify-content: center;
         }
     }
 </style>

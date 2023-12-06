@@ -20,7 +20,7 @@
         outline: none;
         margin-left: auto;
         margin-right: auto;
-        
+        border: 1px solid #E0E4EC;
     }
     
     .search-bar input{
