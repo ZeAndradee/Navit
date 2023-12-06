@@ -37,9 +37,9 @@
 * npm start
 
 # :hammer: Funcionalidades e Demonstração da Aplicação
-`Tela de Login`: <p>tela de login incial do terapeuta.</p> 
+`Tela de Login`: <p>Tela de login incial do terapeuta.</p> 
 
-![Tela Inicial](<src/Assets/Readme/Tela Inicial.png>)
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/7a9a88df-6271-41b6-86dd-942182e5ae74)
 
 <p> 
 A tela de login de acesso ao terapeuta contém 2 arquivos:
@@ -52,9 +52,9 @@ A tela de login de acesso ao terapeuta contém 2 arquivos:
 <br/>
 <br/>
 
-`Tela Princial`: <p>Tela inicial após o terapeuta executar seu login, contem vários dados e tabelas, além de acesso rápido a detalhes de pacientes.</p>
+`Tela Principal`: <p>Tela inicial após o terapeuta executar seu login, contem vários dados e tabelas, além de acesso rápido a detalhes de pacientes.</p>
 
-![Tela de Login - Agente](src/Assets/Readme/Login-user.png)
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/71cad8a6-e55a-4c48-a9e1-bca98f8ca56f)
 
 A tela de login é composta por 6 arquivos .svelte: Header, SideBarMenu, EstatisticasDiarias, GraficoCliques, ListaPacientes e GraficoComportamento.
 
@@ -84,7 +84,8 @@ A tela de login é composta por 6 arquivos .svelte: Header, SideBarMenu, Estatis
 
 `Tela de Dúvidas`: <p>Tela de suporte aos usuários para resolver problemas e dúvidas. </p>
 
-![Tela de Login - Agente](src/Assets/Readme/Login-user.png)
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/cf252079-d61d-4c3d-b9d5-43324e480e45)
+
 
 A tela de dúvidas é constituidas por 2 elementos que já apareceram e 1 específico para página: SideBarMenu, Header e Duvidas.
 
@@ -102,7 +103,8 @@ A tela de dúvidas é constituidas por 2 elementos que já apareceram e 1 espec�
 
 `Tela de Prontuários`: <p>Esta tela permite ao terapeuta o acesso aos prontuários, disponibilizando informações mais detalhadas sobre cada paciente</p>
 
-![Tela de Cadastro Agente](src/Assets/Readme/CadastroUser.png)
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/8d62005d-491f-4615-b40f-258984df03fa)
+
 
 
 <p>Para a construção da tela foi utilizado 4 arquivos svelte além dos arquivos Header e SideBarMenu:</p>
@@ -126,7 +128,9 @@ A tela de dúvidas é constituidas por 2 elementos que já apareceram e 1 espec�
 <ul><li> Utiliza dois arquivos para uma função, primeiro ele utiliza os dados do TableProntuarios (nome do paciente, andamento do tratamento, data de nascimento, número de sessões e ultima atualização de paciente) e distribui ele a partir do CardProntuarios.</li></ul>
 <br/>
 <h3> Além disso, temos uma tela expandida com a informação dos pacientes</h3>
-![Tela de Cadastro Agente](src/Assets/Readme/CadastroUser.png)
+
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/acbb3b76-e9a3-449e-801c-9fb318dbdb3d)
+
 <br/>
 <p> Além das informações supracitadas, o terpeuta teria como acompanhar as sessões anteriores dos pacientes através do paciente. Arquivos adicionais foram adicionados para isto, são eles: </p>
 <h3>🪪​ InfoPaciente </h3>
@@ -142,7 +146,9 @@ A tela de dúvidas é constituidas por 2 elementos que já apareceram e 1 espec�
 
 `Tela de Configurações`: <p>Tela utilizada para alterar dados do perfil e notificações, também podemos acessar a aba de dúvidas a partir dela</p>
 
-![Tela de Cadastro Agente](src/Assets/Readme/CadastroUser.png)
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/d84b3de0-e8c8-48b1-b551-5731f4edf4eb)
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/15c9b456-c31c-4a49-93cc-1f0a488eebaf)
+![image](https://github.com/ZeAndradee/Navit/assets/83325914/d56babc0-e103-4115-be7c-254ac1c7d20f)
 
 <p>Os componentes utilizados para construção desta tela foram:</p>
 
@@ -163,5 +169,5 @@ A tela de dúvidas é constituidas por 2 elementos que já apareceram e 1 espec�
 <br/>
 
 # Pessoas Desenvolvedoras do Projeto
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/89558668?v=4" width=115><br><sub>Ana Beatriz Lira</sub>](https://github.com/anabsl) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/146121865?v=4" width=115><br><sub>Anderson Fernandes</sub>](https://github.com/AndersonFernandes-dev) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/146091291?v=4" width=115><br><sub>Artur Ramos</sub>](https://github.com/Arturdev05) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/124224859?v=4" width=115><br><sub>Beatriz Rodrigues</sub>](https://github.com/Beatriz-Rodriguesx) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/145875117?v=4" width=115><br><sub>Beatriz Silva</sub>](https://github.com/BiaSilvaa) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/144251910?v=4" width=115><br><sub>Carlos Lima</sub>](https://github.com/CarlosDev258) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/104471926?v=4" width=115><br><sub>Flavia Favacho</sub>](https://github.com/flaviafavacho) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/145810174?v=4" width=115><br><sub>Gabriel Oliveira</sub>](https://github.com/gabrieloliveiraa05) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/144847596?v=4" width=115><br><sub>Joana D'Arc</sub>](https://github.com/joanadarc84) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/69319634?v=4" width=115><br><sub>Kelvia Santos</sub>](https://github.com/kelvia-snts) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/62075108?v=4" width=115><br><sub>Rennan Reis</sub>](https://github.com/rennan2020) |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/83325914?v=4" width=115><br><sub>Manoel Leonardo</sub>](https://github.com/manoelleonardocse77e) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/59659214?v=4" width=115><br><sub>José Vinícius</sub>](https://github.com/ZeAndradee) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/116170926?v=4" width=115><br><sub>Maria Fernanda</sub>](https://github.com/mfhhia) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/135342808?v=4" width=115><br><sub>Lucas Alves</sub>](https://github.com/LucasStranger) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/129004284?v=4" width=115><br><sub>Arthur Renê</sub>](https://github.com/ArthurRSS4) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/134803634?v=4" width=115><br><sub>Otton Vinicius</sub>](https://github.com/Ott-on) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/118084378?v=4" width=115><br><sub>Dhavi Domingues</sub>]https://github.com/DhaviDBD) 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
