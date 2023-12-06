@@ -30,7 +30,7 @@
     align-items: flex-start;
     gap: 6px;
     border-radius: 10px;
-    background: white;
+    background: #FDFDFD;
     border: 1px solid #E0E4EC;
   }
 

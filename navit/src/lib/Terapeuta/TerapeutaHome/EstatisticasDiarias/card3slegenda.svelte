@@ -55,7 +55,7 @@ import { onMount } from 'svelte';
   .card3{
     display: flex;
     width: 288px;
-    height: 233px;
+    height: 228px;
     padding: 24px 24px 20px 22px;
     flex-direction: column;
     align-items: flex-start;

@@ -5,7 +5,7 @@
     import { onMount } from "svelte";
 
     onMount(() => {
-    document.title = 'Configurações';
+    document.title = 'Dúvidas - YouMe';
   });
 </script>
 
