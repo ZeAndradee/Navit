@@ -64,15 +64,15 @@ import { onMount } from 'svelte';
 <style>
   .card3{
     display: flex;
-    width: 288px;
-    height: 360px;
+    width: 100%;
+    height: max-content;
     padding: 24px 24px 20px 22px;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
     border-radius: 10px;
-    background: #FDFDFD;
-    
+    background: white;
+    border: 1px solid #E0E4EC;
   }
   .grafico-status-pacientes{
     width: 100%;

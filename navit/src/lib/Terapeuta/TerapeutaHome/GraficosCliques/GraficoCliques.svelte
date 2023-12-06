@@ -135,13 +135,11 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 283px;
+        height: max-content;
         background-color: white;
         border-radius: 10px;
-        padding: 32px 28px 24px 28px;
-        margin-left: 28px;
-        margin-top: 28px;
-        margin-right: 48px;
+        padding: 24px 28px;
+        border: 1px solid #E0E4EC;
     }
 
     .valores-grafico{
@@ -153,19 +151,15 @@
     .y-valores{
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      margin-left: 10px;
-      margin-top: 10px;
       gap: 30px;
     }
     .grafico{
         width: 100%;
         height: 100%;
-        margin-right: 58px;
+        padding-left: 10px;
     }
 
     .canvas-grafico{
-      margin-left: 32px;
       display: flex;
       width: 100%;
     }
