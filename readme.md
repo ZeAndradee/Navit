@@ -129,7 +129,7 @@ A tela de dúvidas é constituidas por 2 elementos que já apareceram e 1 espec�
 <br/>
 <h3> Além disso, temos uma tela expandida com a informação dos pacientes</h3>
 
-![image](https://github.com/ZeAndradee/Navit/assets/83325914/acbb3b76-e9a3-449e-801c-9fb318dbdb3d)
+![Paciente - YouMe](https://github.com/ZeAndradee/Navit/assets/59659214/6d711a42-19ed-414e-bcfe-aba1e5da2ad9)
 
 <br/>
 <p> Além das informações supracitadas, o terpeuta teria como acompanhar as sessões anteriores dos pacientes através do paciente. Arquivos adicionais foram adicionados para isto, são eles: </p>
