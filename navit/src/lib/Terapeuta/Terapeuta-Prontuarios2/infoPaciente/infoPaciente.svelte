@@ -1,207 +1,91 @@
+<script>
+  let idPaciente = 'q7h3dauolwft7qyi3kb5bbhn';
+  let generoPaciente = 'Masculino';
+  let primeiraSessaoPaciente = '15/05/2023';
+  let dataNascimentoPaciente = '12/05/2013';
+  let evolucaoPaciente = 'Boa';
+  let ultimaSessaoPaciente = '20/10/2023';
+</script>
 
 
-<body>
-  <div class="container">
-    <p class="id">ID</p>
-    <p class="num-id">q7h3dauolwft7qyi3kb5bbhn</p>
-    <p class = "nascimento">Data de nascimento</p>
-    <p class = "data-nasci">12/05/2004</p>
-    <p class="gen">Gênero</p>
-    <p class="fem">Feminino</p>
-    <p class="random">Data Qualquer</p>
-    <p class="randomdata">07/03/2023</p>
-    <p class="primsessao">Primeira Sessão</p>
-    <p class="primsessao-data">15/05/2023</p>
-    <p class="ultsessao">Ultima Sessão</p>
-    <p class="ultsessao-data">20/10/2023</p>
+<div class="container">
+  <div class="inner-row">
+    <div class="inner-column">
+      <div class="title-txt"><span>ID</span></div>
+      <div class="sub-txt-1"><span>{idPaciente}</span></div>
+    </div>
+    <div class="inner-column">
+      <div class="title-txt"><span>Gênero</span></div>
+      <div class="sub-txt-2"><span>{generoPaciente}</span></div>
+    </div>
+    <div class="inner-column">
+      <div class="title-txt"><span>Primeira Sessão</span></div>
+      <div class="sub-txt-3"><span>{primeiraSessaoPaciente}</span></div>
+    </div>
   </div>
-</body>
-
-
-<style>
-  @import url('https://rsms.me/inter/inter.css');
-  .container {
-    position: flex;
-    width: 618px;
-    height: 162px;
-    flex-shrink: 0;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .id {
-    position: absolute;
-    width: 147px;
-    height: 12px;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #4B4B4B;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 18px;
-  }
-
-  .num-id {
-    position: absolute;
-    width: 193px;
-    height: 17px;
-    color: #000;
-    font-family: 'Inter';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 40px;
-    margin-left: 18px;
-
-  }
-
-  .nascimento {
-    position: absolute;
-    width: 146.203px;
-    height: 12px;
-    justify-content: start;
-    color: #4B4B4B;
-    font-family: 'Inter';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    flex-shrink: 0;
-    margin-left: 18px;
-    margin-top: 75px;
-  }
-
-  .data-nasci {
-    position: absolute;
-    width: 79px;
-    height: 17px;
-    color: #000;
-    font-family: 'Inter';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 100px;
-    margin-left: 18px;
-  }
-
-  .gen {
-    position: absolute;
-    width: 147px;
-    height: 12px;
-    flex-direction: column;
-    flex-shrink: 0;
-    color: #4B4B4B;
-    font-family: 'Inter';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 268px;
-  }
-
-  .fem {
-    position: absolute;
-    width: 70px;
-    height: 17px;
-    color: #000;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 40px;
-    margin-left: 268px;
-  }
-
-  .random {
-    position: absolute;
-    width: 147px;
-    height: 12px;
-    flex-shrink: 0;
-    color: #4B4B4B;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 75px;
-    margin-left: 268px;
-  }
-
-  .randomdata {
-    position: absolute;
-    color: #000;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 100px;
-    margin-left: 268px;
-  }
-
-  .primsessao {
-    position: absolute;
-    width: 147px;
-    height: 12px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #4B4B4B;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 450px;
-  }
-
-  .primsessao-data{
-    position: absolute;
-    color: #000;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 450px;
-    margin-top: 40px;
-  }
-
-  .ultsessao{
-    position: absolute;
-    width: 147px;
-    height: 12px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #4B4B4B;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 450px;
-    margin-top: 75px;
-  }
-
-  .ultsessao-data{
-    position: absolute;
-    color: #000;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 450px;
-    margin-top: 100px;
-  }
+  <div class="inner-row" style="margin-top: 15px;">
+    <div class="inner-column">
+      <div class="title-txt"><span>Data de Nascimento</span></div>
+      <div class="sub-txt-1"><span>{dataNascimentoPaciente}</span></div>
+    </div>
+    <div class="inner-column">
+      <div class="title-txt"><span>Evolução</span></div>
+      <div class="sub-txt-2"><span>{evolucaoPaciente}</span></div>
+    </div>
+    <div class="inner-column">
+      <div class="title-txt"><span>Última Sessão</span></div>
+      <div class="sub-txt-3"><span>{ultimaSessaoPaciente}</span></div>
+    </div>
+  </div>
+</div>
   
-</style>
+  
+  <style>
+    .container {
+      position: flex;
+      width: 100%;
+      height: max-content;
+      padding: 15px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      border: 1px solid #E0E4EC;
+    }
+
+    .inner-row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .inner-column{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title-txt{
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    .sub-txt-1{
+      width: 210px;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+    }
+    .sub-txt-2{
+      width: 80px;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      
+    }
+    .sub-txt-3{
+      width: 120px;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+    }
+    
+  </style>
