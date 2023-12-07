@@ -89,7 +89,7 @@
         flex-direction: column;
         height: 100%;
         width: max-content;
-        align-items: end;
+        align-items: flex-end;
     }
 
     .tabela-prontuarios{
