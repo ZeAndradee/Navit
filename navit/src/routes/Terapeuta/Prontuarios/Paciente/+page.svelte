@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
 
-    // import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/InfoPaciente/InfoPaciente.svelte";
+    import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/InfoPaciente/InfoPaciente.svelte";
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
     import Headerpaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/headerPaciente/headerpaciente.svelte";
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte";
