@@ -1,7 +1,6 @@
 <script>
 // @ts-nocheck
-
-    // import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/InfoPaciente/InfoPaciente.svelte";
+    import InfoPaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/infoPaciente/infoPaciente.svelte";
     import Header from "$lib/Terapeuta/TerapeutaHome/Header/header.svelte";
     import Headerpaciente from "$lib/Terapeuta/Terapeuta-Prontuarios2/headerPaciente/headerpaciente.svelte";
     import SideBarMenuInicio from "$lib/SideBarMenu/SideBarMenu.svelte";
@@ -39,7 +38,7 @@
                         <Headerpaciente />
                     </div>
                     <div>
-                        <!-- <InfoPaciente /> -->
+                        <InfoPaciente />
                     </div>
                     <div class="inner-row2">
                         <div><Card1/></div>
