@@ -6,28 +6,40 @@
     </script>
     
     <!-- Renderizar o elemento canvas -->
-    <div class="card3">
-    
-        <div class="legenda">
-          <div class="leg1"><div class="bola"></div> <span style="margin-left: 12px; color: black">Parque</span> <span style="margin-left: auto; color: black">{NovoSP}% <span style="color: #52C93F; font-weight:700">↑</span></span></div>
-          <div class="leg1"><div class="bola" style="background-color: #006AFF;"></div> <span style="margin-left: 12px; color: black">Comida</span> <span style="margin-left: auto; color: black">{AndamentoSP}% <span style="color: #52C93F; font-weight:700">↑</span></span></div>
-          <div class="leg1"><div class="bola" style="background-color: #FF2727;"></div> <span style="margin-left: 12px; color: black">Brincar</span> <span style="margin-left: auto; color: black">{FinalizadoSP}% <span style="color: #FF2727; font-weight:700">↓</span></span></div>
+    <div class="legenda">
+        <div class="leg1">
+            <div class="bola-btn">
+              <div class="bola"></div>
+              <span>Parque</span>
+            </div>
+            <div class="porc-seta">
+              <span>{NovoSP}%</span>
+              <span class="setacima">↑</span>
+            </div>
         </div>
-    </div>
-    
-    <style>
+        <div class="leg1">
+            <div class="bola-btn">
+              <div class="bola" style="background-color: #006AFF;"></div>
+              <span>Comida</span>
+            </div>
+            <div class="porc-seta">
+              <span>{AndamentoSP}%</span>
+              <span class="setacima">↑</span>
+            </div>
+        </div>
+        <div class="leg1">
+            <div class="bola-btn">
+              <div class="bola" style="background-color: #FF2727;"></div>
+              <span>Brincar</span>
+            </div>
+            <div class="porc-seta">
+              <span>{FinalizadoSP}%</span>
+              <span class="setabaixo">↓</span>
+            </div>
+        </div>
       
-      .card3{
-        display: flex;
-        width: 250px;
-        height: max-content;
-        margin-left: 8%;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 10px;
-        background: white;
-        height: auto;
-      }
+    </div>
+    <style>
     
       .legenda{
         width: 100%;
@@ -42,7 +54,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        
+        justify-content: space-between;
       }
     
       .bola{
@@ -50,5 +62,28 @@
         width: 16px;
         background-color: #52C93F;
         border-radius: 50%;
+      }
+
+      .bola-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .porc-seta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .setacima{
+        color: #52C93F;
+        font-weight: 700;
+      }
+      .setabaixo{
+        color: #FF2727;
+        font-weight: 700;
       }
     </style>
