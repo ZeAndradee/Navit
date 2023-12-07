@@ -1,6 +1,9 @@
 <script>
 // @ts-nocheck
-
+    import { goto } from "$app/navigation";
+    function navigateToPaciente() {
+      goto('/Terapeuta/Prontuarios/Paciente');
+   }
     // Row 1
     let dataNascimentoPaciente = "20/09/2013";
     let generoPaciente = "Masculino";
@@ -106,7 +109,7 @@
             </div>
         </div>
         <div class="div-btn-expandir">
-            <button class="btn-expandir">
+            <button class="btn-expandir" on:click={navigateToPaciente}>
                 <span>Expandir</span>
             </button>
         </div>

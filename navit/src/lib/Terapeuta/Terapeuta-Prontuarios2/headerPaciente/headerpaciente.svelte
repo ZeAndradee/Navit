@@ -9,7 +9,7 @@
       <img src = {photo} alt="foto do paciente do prontuário correspondente">
     </div>
     <div class="paciente-info">
-      <span class="nome-paciente">João Monero</span>
+      <span class="nome-paciente">Pedro Henrique</span>
       <span class="paciente-ref">Paciente</span>
     </div>
   </div>  
